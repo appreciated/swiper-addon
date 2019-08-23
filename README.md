@@ -1,6 +1,6 @@
 # Swiper for Vaadin 14
 
-Vaadin 14 Java integration of swiper
+Vaadin 14 Java integration of [swiper](https://idangero.us/swiper/)
 
 ## Development instructions
 
