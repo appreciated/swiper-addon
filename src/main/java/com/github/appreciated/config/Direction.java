@@ -1,5 +1,7 @@
 package com.github.appreciated.config;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum Direction {
     HORIZONTAL("horizontal"), VERTICAL("vertical");
 
@@ -9,6 +11,7 @@ public enum Direction {
         this.name = name;
     }
 
+    @JsonValue
     public String getName() {
         return name;
     }
