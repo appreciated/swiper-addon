@@ -1,6 +1,6 @@
-# Paper Slider
+# Swiper for Vaadin 14
 
-Vaadin 14 Java integration of nullswiper
+Vaadin 14 Java integration of [swiper](https://idangero.us/swiper/)
 
 ## Development instructions
 
