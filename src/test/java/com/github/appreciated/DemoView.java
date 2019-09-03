@@ -1,5 +1,6 @@
 package com.github.appreciated;
 
+import com.github.appreciated.config.Direction;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
@@ -14,20 +15,35 @@ import com.vaadin.flow.theme.material.Material;
 public class DemoView extends Div {
 
     public DemoView() {
-        Swiper sw = new Swiper(SwiperConfigBuilder.get().build());
-        sw.setHeight("300px");
-        sw.setWidth("300px");
-        add(sw);
-
-        sw.add(getSlide());
-        sw.add(getSlide());
-        sw.add(getSlide());
-        sw.add(getSlide());
-
         setSizeFull();
+        addHorizontal();
+        addVertical();
     }
 
-    HorizontalLayout getSlide(){
+    private void addHorizontal() {
+        Swiper sw = new Swiper(SwiperConfigBuilder.get()
+                .withDirection(Direction.HORIZONTAL)
+                .withLoop(true)
+                .build()
+        );
+        sw.setHeight("300px");
+        sw.setWidth("100%");
+        sw.add(getSlide(), getSlide(), getSlide(), getSlide());
+        add(sw);
+    }
+
+    private void addVertical() {
+        Swiper sw = new Swiper(SwiperConfigBuilder.get()
+                .withDirection(Direction.VERTICAL)
+                .withLoop(true).build()
+        );
+        sw.setHeight("300px");
+        sw.setWidth("100%");
+        sw.add(getSlide(), getSlide(), getSlide(), getSlide());
+        add(sw);
+    }
+
+    HorizontalLayout getSlide() {
         HorizontalLayout slide = new HorizontalLayout();
         slide.setSizeFull();
         slide.add(new Label("Meow"));

@@ -1,85 +1,87 @@
 package com.github.appreciated;
 
+import com.github.appreciated.config.Direction;
+
 public class SwiperConfig {
 
-    private boolean init;
-    private double initialSlide;
-    private String direction;
-    private double speed;
-    private boolean setWrapperSize;
-    private boolean virtualTranslate;
-    private double width;
-    private double height;
-    private boolean autoHeight;
-    private boolean roundLengths;
-    private boolean nested;
-    private boolean uniqueNavElements;
+    private Boolean init;
+    private Double initialSlide;
+    private Direction direction;
+    private Double speed;
+    private Boolean setWrapperSize;
+    private Boolean virtualTranslate;
+    private Double width;
+    private Double height;
+    private Boolean autoHeight;
+    private Boolean roundLengths;
+    private Boolean nested;
+    private Boolean uniqueNavElements;
     private String effect;
-    private boolean runCallbacksOnInit;
-    private boolean watchOverflow;
+    private Boolean runCallbacksOnInit;
+    private Boolean watchOverflow;
     private Object on;
-    private double spaceBetween;
-    private double slidesPerView; //TODO number or 'auto'
-    private double slidesPerColumn;
+    private Double spaceBetween;
+    private Double slidesPerView; //TODO number or 'auto'
+    private Double slidesPerColumn;
     private String slidesPerColumnFill;
-    private double slidesPerGroup;
-    private boolean centeredSlides;
-    private double slidesOffsetBefore;
-    private double slidesOffsetAfter;
-    private boolean normalizeSlideIndex;
-    private boolean centerInsufficientSlides;
-    private boolean grabCursor;
+    private Double slidesPerGroup;
+    private Boolean centeredSlides;
+    private Double slidesOffsetBefore;
+    private Double slidesOffsetAfter;
+    private Boolean normalizeSlideIndex;
+    private Boolean centerInsufficientSlides;
+    private Boolean grabCursor;
     private String touchEventsTarget;
-    private double touchRatio;
-    private double touchAngle;
-    private boolean simulateTouch;
-    private boolean shortSwipes;
-    private boolean longSwipes;
-    private double longSwipesRatio;
-    private double longSwipesMs;
-    private boolean followFinger;
-    private boolean allowTouchMove;
-    private double threshold;
-    private boolean touchStartPreventDefault;
-    private boolean touchStartForcePreventDefault;
-    private boolean touchMoveStopPropagation;
-    private boolean iOSEdgeSwipeDetection;
-    private double iOSEdgeSwipeThreshold;
-    private boolean touchReleaseOnEdges;
-    private boolean passiveListeners;
-    private boolean resistance;
-    private double resistanceRatio;
-    private boolean preventInteractionOnTransition;
-    private boolean allowSlidePrev;
-    private boolean allowSlideNext;
-    private boolean noSwiping;
+    private Double touchRatio;
+    private Double touchAngle;
+    private Boolean simulateTouch;
+    private Boolean shortSwipes;
+    private Boolean longSwipes;
+    private Double longSwipesRatio;
+    private Double longSwipesMs;
+    private Boolean followFinger;
+    private Boolean allowTouchMove;
+    private Double threshold;
+    private Boolean touchStartPreventDefault;
+    private Boolean touchStartForcePreventDefault;
+    private Boolean touchMoveStopPropagation;
+    private Boolean iOSEdgeSwipeDetection;
+    private Double iOSEdgeSwipeThreshold;
+    private Boolean touchReleaseOnEdges;
+    private Boolean passiveListeners;
+    private Boolean resistance;
+    private Double resistanceRatio;
+    private Boolean preventInteractionOnTransition;
+    private Boolean allowSlidePrev;
+    private Boolean allowSlideNext;
+    private Boolean noSwiping;
     private String noSwipingClass;
     private String noSwipingSelector;
     private String swipeHandler; //TODO string / HTMLElement
-    private boolean preventClicks;
-    private boolean preventClicksPropagation;
-    private boolean slideToClickedSlide;
-    private boolean freeMode;
-    private boolean freeModeMomentum;
-    private double freeModeMomentumRatio;
-    private double freeModeMomentumVelocityRatio;
-    private boolean freeModeMomentumBounce;
-    private double freeModeMomentumBounceRatio;
-    private double freeModeMinimumVelocity;
-    private boolean freeModeSticky;
-    private boolean watchSlidesProgress;
-    private boolean watchSlidesVisibility;
-    private boolean preloadImages;
-    private boolean updateOnImagesReady;
-    private boolean loop;
-    private double loopAdditionalSlides;
-    private double loopedSlides;
-    private boolean loopFillGroupWithBlank;
+    private Boolean preventClicks;
+    private Boolean preventClicksPropagation;
+    private Boolean slideToClickedSlide;
+    private Boolean freeMode;
+    private Boolean freeModeMomentum;
+    private Double freeModeMomentumRatio;
+    private Double freeModeMomentumVelocityRatio;
+    private Boolean freeModeMomentumBounce;
+    private Double freeModeMomentumBounceRatio;
+    private Double freeModeMinimumVelocity;
+    private Boolean freeModeSticky;
+    private Boolean watchSlidesProgress;
+    private Boolean watchSlidesVisibility;
+    private Boolean preloadImages;
+    private Boolean updateOnImagesReady;
+    private Boolean loop;
+    private Double loopAdditionalSlides;
+    private Double loopedSlides;
+    private Boolean loopFillGroupWithBlank;
     private Object breakpoints;
-    private boolean breakpointsInverse;
-    private boolean observer;
-    private boolean observeParents;
-    private boolean observeSlideChildren;
+    private Boolean breakpointsInverse;
+    private Boolean observer;
+    private Boolean observeParents;
+    private Boolean observeSlideChildren;
     private String containerModifierClass;
     private String slideClass;
     private String slideActiveClass;
@@ -95,248 +97,248 @@ public class SwiperConfig {
     public SwiperConfig() {
     }
 
-    public boolean isInit() {
+    public Boolean isInit() {
         return init;
     }
 
-    public boolean isSetWrapperSize() {
+    public Boolean isSetWrapperSize() {
         return setWrapperSize;
     }
 
-    public boolean isVirtualTranslate() {
+    public Boolean isVirtualTranslate() {
         return virtualTranslate;
     }
 
-    public boolean isAutoHeight() {
+    public Boolean isAutoHeight() {
         return autoHeight;
     }
 
-    public boolean isRoundLengths() {
+    public Boolean isRoundLengths() {
         return roundLengths;
     }
 
-    public boolean isNested() {
+    public Boolean isNested() {
         return nested;
     }
 
-    public boolean isUniqueNavElements() {
+    public Boolean isUniqueNavElements() {
         return uniqueNavElements;
     }
 
-    public boolean isRunCallbacksOnInit() {
+    public Boolean isRunCallbacksOnInit() {
         return runCallbacksOnInit;
     }
 
-    public boolean isWatchOverflow() {
+    public Boolean isWatchOverflow() {
         return watchOverflow;
     }
 
-    public boolean isCenteredSlides() {
+    public Boolean isCenteredSlides() {
         return centeredSlides;
     }
 
-    public boolean isNormalizeSlideIndex() {
+    public Boolean isNormalizeSlideIndex() {
         return normalizeSlideIndex;
     }
 
-    public boolean isCenterInsufficientSlides() {
+    public Boolean isCenterInsufficientSlides() {
         return centerInsufficientSlides;
     }
 
-    public boolean isGrabCursor() {
+    public Boolean isGrabCursor() {
         return grabCursor;
     }
 
-    public boolean isSimulateTouch() {
+    public Boolean isSimulateTouch() {
         return simulateTouch;
     }
 
-    public boolean isShortSwipes() {
+    public Boolean isShortSwipes() {
         return shortSwipes;
     }
 
-    public boolean isLongSwipes() {
+    public Boolean isLongSwipes() {
         return longSwipes;
     }
 
-    public boolean isFollowFinger() {
+    public Boolean isFollowFinger() {
         return followFinger;
     }
 
-    public boolean isAllowTouchMove() {
+    public Boolean isAllowTouchMove() {
         return allowTouchMove;
     }
 
-    public boolean isTouchStartPreventDefault() {
+    public Boolean isTouchStartPreventDefault() {
         return touchStartPreventDefault;
     }
 
-    public boolean isTouchStartForcePreventDefault() {
+    public Boolean isTouchStartForcePreventDefault() {
         return touchStartForcePreventDefault;
     }
 
-    public boolean isTouchMoveStopPropagation() {
+    public Boolean isTouchMoveStopPropagation() {
         return touchMoveStopPropagation;
     }
 
-    public boolean isiOSEdgeSwipeDetection() {
+    public Boolean isiOSEdgeSwipeDetection() {
         return iOSEdgeSwipeDetection;
     }
 
-    public void setiOSEdgeSwipeDetection(boolean iOSEdgeSwipeDetection) {
+    public void setiOSEdgeSwipeDetection(Boolean iOSEdgeSwipeDetection) {
         this.iOSEdgeSwipeDetection = iOSEdgeSwipeDetection;
     }
 
-    public double getiOSEdgeSwipeThreshold() {
+    public Double getiOSEdgeSwipeThreshold() {
         return iOSEdgeSwipeThreshold;
     }
 
-    public void setiOSEdgeSwipeThreshold(double iOSEdgeSwipeThreshold) {
+    public void setiOSEdgeSwipeThreshold(Double iOSEdgeSwipeThreshold) {
         this.iOSEdgeSwipeThreshold = iOSEdgeSwipeThreshold;
     }
 
-    public boolean isTouchReleaseOnEdges() {
+    public Boolean isTouchReleaseOnEdges() {
         return touchReleaseOnEdges;
     }
 
-    public boolean isPassiveListeners() {
+    public Boolean isPassiveListeners() {
         return passiveListeners;
     }
 
-    public boolean isResistance() {
+    public Boolean isResistance() {
         return resistance;
     }
 
-    public boolean isPreventInteractionOnTransition() {
+    public Boolean isPreventInteractionOnTransition() {
         return preventInteractionOnTransition;
     }
 
-    public boolean isAllowSlidePrev() {
+    public Boolean isAllowSlidePrev() {
         return allowSlidePrev;
     }
 
-    public boolean isAllowSlideNext() {
+    public Boolean isAllowSlideNext() {
         return allowSlideNext;
     }
 
-    public boolean isNoSwiping() {
+    public Boolean isNoSwiping() {
         return noSwiping;
     }
 
-    public boolean isPreventClicks() {
+    public Boolean isPreventClicks() {
         return preventClicks;
     }
 
-    public boolean isPreventClicksPropagation() {
+    public Boolean isPreventClicksPropagation() {
         return preventClicksPropagation;
     }
 
-    public boolean isSlideToClickedSlide() {
+    public Boolean isSlideToClickedSlide() {
         return slideToClickedSlide;
     }
 
-    public boolean isFreeMode() {
+    public Boolean isFreeMode() {
         return freeMode;
     }
 
-    public boolean isFreeModeMomentum() {
+    public Boolean isFreeModeMomentum() {
         return freeModeMomentum;
     }
 
-    public boolean isFreeModeMomentumBounce() {
+    public Boolean isFreeModeMomentumBounce() {
         return freeModeMomentumBounce;
     }
 
-    public boolean isFreeModeSticky() {
+    public Boolean isFreeModeSticky() {
         return freeModeSticky;
     }
 
-    public boolean isWatchSlidesProgress() {
+    public Boolean isWatchSlidesProgress() {
         return watchSlidesProgress;
     }
 
-    public boolean isWatchSlidesVisibility() {
+    public Boolean isWatchSlidesVisibility() {
         return watchSlidesVisibility;
     }
 
-    public boolean isPreloadImages() {
+    public Boolean isPreloadImages() {
         return preloadImages;
     }
 
-    public boolean isUpdateOnImagesReady() {
+    public Boolean isUpdateOnImagesReady() {
         return updateOnImagesReady;
     }
 
-    public boolean isLoop() {
+    public Boolean isLoop() {
         return loop;
     }
 
-    public boolean isLoopFillGroupWithBlank() {
+    public Boolean isLoopFillGroupWithBlank() {
         return loopFillGroupWithBlank;
     }
 
-    public boolean isBreakpointsInverse() {
+    public Boolean isBreakpointsInverse() {
         return breakpointsInverse;
     }
 
-    public boolean isObserver() {
+    public Boolean isObserver() {
         return observer;
     }
 
-    public boolean isObserveParents() {
+    public Boolean isObserveParents() {
         return observeParents;
     }
 
-    public boolean isObserveSlideChildren() {
+    public Boolean isObserveSlideChildren() {
         return observeSlideChildren;
     }
 
 
-    public boolean getInit() {
+    public Boolean getInit() {
         return init;
     }
 
-    public double getInitialSlide() {
+    public Double getInitialSlide() {
         return initialSlide;
     }
 
-    public String getDirection() {
+    public Direction getDirection() {
         return direction;
     }
 
-    public double getSpeed() {
+    public Double getSpeed() {
         return speed;
     }
 
-    public boolean getSetWrapperSize() {
+    public Boolean getSetWrapperSize() {
         return setWrapperSize;
     }
 
-    public boolean getVirtualTranslate() {
+    public Boolean getVirtualTranslate() {
         return virtualTranslate;
     }
 
-    public double getWidth() {
+    public Double getWidth() {
         return width;
     }
 
-    public double getHeight() {
+    public Double getHeight() {
         return height;
     }
 
-    public boolean getAutoHeight() {
+    public Boolean getAutoHeight() {
         return autoHeight;
     }
 
-    public boolean getRoundLengths() {
+    public Boolean getRoundLengths() {
         return roundLengths;
     }
 
-    public boolean getNested() {
+    public Boolean getNested() {
         return nested;
     }
 
-    public boolean getUniqueNavElements() {
+    public Boolean getUniqueNavElements() {
         return uniqueNavElements;
     }
 
@@ -344,11 +346,11 @@ public class SwiperConfig {
         return effect;
     }
 
-    public boolean getRunCallbacksOnInit() {
+    public Boolean getRunCallbacksOnInit() {
         return runCallbacksOnInit;
     }
 
-    public boolean getWatchOverflow() {
+    public Boolean getWatchOverflow() {
         return watchOverflow;
     }
 
@@ -356,15 +358,15 @@ public class SwiperConfig {
         return on;
     }
 
-    public double getSpaceBetween() {
+    public Double getSpaceBetween() {
         return spaceBetween;
     }
 
-    public double getSlidesPerView() {
+    public Double getSlidesPerView() {
         return slidesPerView;
     }
 
-    public double getSlidesPerColumn() {
+    public Double getSlidesPerColumn() {
         return slidesPerColumn;
     }
 
@@ -372,31 +374,31 @@ public class SwiperConfig {
         return slidesPerColumnFill;
     }
 
-    public double getSlidesPerGroup() {
+    public Double getSlidesPerGroup() {
         return slidesPerGroup;
     }
 
-    public boolean getCenteredSlides() {
+    public Boolean getCenteredSlides() {
         return centeredSlides;
     }
 
-    public double getSlidesOffsetBefore() {
+    public Double getSlidesOffsetBefore() {
         return slidesOffsetBefore;
     }
 
-    public double getSlidesOffsetAfter() {
+    public Double getSlidesOffsetAfter() {
         return slidesOffsetAfter;
     }
 
-    public boolean getNormalizeSlideIndex() {
+    public Boolean getNormalizeSlideIndex() {
         return normalizeSlideIndex;
     }
 
-    public boolean getCenterInsufficientSlides() {
+    public Boolean getCenterInsufficientSlides() {
         return centerInsufficientSlides;
     }
 
-    public boolean getGrabCursor() {
+    public Boolean getGrabCursor() {
         return grabCursor;
     }
 
@@ -404,95 +406,95 @@ public class SwiperConfig {
         return touchEventsTarget;
     }
 
-    public double getTouchRatio() {
+    public Double getTouchRatio() {
         return touchRatio;
     }
 
-    public double getTouchAngle() {
+    public Double getTouchAngle() {
         return touchAngle;
     }
 
-    public boolean getSimulateTouch() {
+    public Boolean getSimulateTouch() {
         return simulateTouch;
     }
 
-    public boolean getShortSwipes() {
+    public Boolean getShortSwipes() {
         return shortSwipes;
     }
 
-    public boolean getLongSwipes() {
+    public Boolean getLongSwipes() {
         return longSwipes;
     }
 
-    public double getLongSwipesRatio() {
+    public Double getLongSwipesRatio() {
         return longSwipesRatio;
     }
 
-    public double getLongSwipesMs() {
+    public Double getLongSwipesMs() {
         return longSwipesMs;
     }
 
-    public boolean getFollowFinger() {
+    public Boolean getFollowFinger() {
         return followFinger;
     }
 
-    public boolean getAllowTouchMove() {
+    public Boolean getAllowTouchMove() {
         return allowTouchMove;
     }
 
-    public double getThreshold() {
+    public Double getThreshold() {
         return threshold;
     }
 
-    public boolean getTouchStartPreventDefault() {
+    public Boolean getTouchStartPreventDefault() {
         return touchStartPreventDefault;
     }
 
-    public boolean getTouchStartForcePreventDefault() {
+    public Boolean getTouchStartForcePreventDefault() {
         return touchStartForcePreventDefault;
     }
 
-    public boolean getTouchMoveStopPropagation() {
+    public Boolean getTouchMoveStopPropagation() {
         return touchMoveStopPropagation;
     }
 
-    public boolean getIOSEdgeSwipeDetection() {
+    public Boolean getIOSEdgeSwipeDetection() {
         return iOSEdgeSwipeDetection;
     }
 
-    public double getIOSEdgeSwipeThreshold() {
+    public Double getIOSEdgeSwipeThreshold() {
         return iOSEdgeSwipeThreshold;
     }
 
-    public boolean getTouchReleaseOnEdges() {
+    public Boolean getTouchReleaseOnEdges() {
         return touchReleaseOnEdges;
     }
 
-    public boolean getPassiveListeners() {
+    public Boolean getPassiveListeners() {
         return passiveListeners;
     }
 
-    public boolean getResistance() {
+    public Boolean getResistance() {
         return resistance;
     }
 
-    public double getResistanceRatio() {
+    public Double getResistanceRatio() {
         return resistanceRatio;
     }
 
-    public boolean getPreventInteractionOnTransition() {
+    public Boolean getPreventInteractionOnTransition() {
         return preventInteractionOnTransition;
     }
 
-    public boolean getAllowSlidePrev() {
+    public Boolean getAllowSlidePrev() {
         return allowSlidePrev;
     }
 
-    public boolean getAllowSlideNext() {
+    public Boolean getAllowSlideNext() {
         return allowSlideNext;
     }
 
-    public boolean getNoSwiping() {
+    public Boolean getNoSwiping() {
         return noSwiping;
     }
 
@@ -508,79 +510,79 @@ public class SwiperConfig {
         return swipeHandler;
     }
 
-    public boolean getPreventClicks() {
+    public Boolean getPreventClicks() {
         return preventClicks;
     }
 
-    public boolean getPreventClicksPropagation() {
+    public Boolean getPreventClicksPropagation() {
         return preventClicksPropagation;
     }
 
-    public boolean getSlideToClickedSlide() {
+    public Boolean getSlideToClickedSlide() {
         return slideToClickedSlide;
     }
 
-    public boolean getFreeMode() {
+    public Boolean getFreeMode() {
         return freeMode;
     }
 
-    public boolean getFreeModeMomentum() {
+    public Boolean getFreeModeMomentum() {
         return freeModeMomentum;
     }
 
-    public double getFreeModeMomentumRatio() {
+    public Double getFreeModeMomentumRatio() {
         return freeModeMomentumRatio;
     }
 
-    public double getFreeModeMomentumVelocityRatio() {
+    public Double getFreeModeMomentumVelocityRatio() {
         return freeModeMomentumVelocityRatio;
     }
 
-    public boolean getFreeModeMomentumBounce() {
+    public Boolean getFreeModeMomentumBounce() {
         return freeModeMomentumBounce;
     }
 
-    public double getFreeModeMomentumBounceRatio() {
+    public Double getFreeModeMomentumBounceRatio() {
         return freeModeMomentumBounceRatio;
     }
 
-    public double getFreeModeMinimumVelocity() {
+    public Double getFreeModeMinimumVelocity() {
         return freeModeMinimumVelocity;
     }
 
-    public boolean getFreeModeSticky() {
+    public Boolean getFreeModeSticky() {
         return freeModeSticky;
     }
 
-    public boolean getWatchSlidesProgress() {
+    public Boolean getWatchSlidesProgress() {
         return watchSlidesProgress;
     }
 
-    public boolean getWatchSlidesVisibility() {
+    public Boolean getWatchSlidesVisibility() {
         return watchSlidesVisibility;
     }
 
-    public boolean getPreloadImages() {
+    public Boolean getPreloadImages() {
         return preloadImages;
     }
 
-    public boolean getUpdateOnImagesReady() {
+    public Boolean getUpdateOnImagesReady() {
         return updateOnImagesReady;
     }
 
-    public boolean getLoop() {
+    public Boolean getLoop() {
         return loop;
     }
 
-    public double getLoopAdditionalSlides() {
+    public Double getLoopAdditionalSlides() {
         return loopAdditionalSlides;
     }
 
-    public double getLoopedSlides() {
+    public Double getLoopedSlides() {
         return loopedSlides;
     }
 
-    public boolean getLoopFillGroupWithBlank() {
+    public Boolean getLoopFillGroupWithBlank() {
         return loopFillGroupWithBlank;
     }
 
@@ -588,19 +590,19 @@ public class SwiperConfig {
         return breakpoints;
     }
 
-    public boolean getBreakpointsInverse() {
+    public Boolean getBreakpointsInverse() {
         return breakpointsInverse;
     }
 
-    public boolean getObserver() {
+    public Boolean getObserver() {
         return observer;
     }
 
-    public boolean getObserveParents() {
+    public Boolean getObserveParents() {
         return observeParents;
     }
 
-    public boolean getObserveSlideChildren() {
+    public Boolean getObserveSlideChildren() {
         return observeSlideChildren;
     }
 
@@ -648,51 +650,51 @@ public class SwiperConfig {
         return wrapperClass;
     }
 
-    public void setInit(boolean init) {
+    public void setInit(Boolean init) {
         this.init = init;
     }
 
-    public void setInitialSlide(double initialSlide) {
+    public void setInitialSlide(Double initialSlide) {
         this.initialSlide = initialSlide;
     }
 
-    public void setDirection(String direction) {
+    public void setDirection(Direction direction) {
         this.direction = direction;
     }
 
-    public void setSpeed(double speed) {
+    public void setSpeed(Double speed) {
         this.speed = speed;
     }
 
-    public void setSetWrapperSize(boolean setWrapperSize) {
+    public void setSetWrapperSize(Boolean setWrapperSize) {
         this.setWrapperSize = setWrapperSize;
     }
 
-    public void setVirtualTranslate(boolean virtualTranslate) {
+    public void setVirtualTranslate(Boolean virtualTranslate) {
         this.virtualTranslate = virtualTranslate;
     }
 
-    public void setWidth(double width) {
+    public void setWidth(Double width) {
         this.width = width;
     }
 
-    public void setHeight(double height) {
+    public void setHeight(Double height) {
         this.height = height;
     }
 
-    public void setAutoHeight(boolean autoHeight) {
+    public void setAutoHeight(Boolean autoHeight) {
         this.autoHeight = autoHeight;
     }
 
-    public void setRoundLengths(boolean roundLengths) {
+    public void setRoundLengths(Boolean roundLengths) {
         this.roundLengths = roundLengths;
     }
 
-    public void setNested(boolean nested) {
+    public void setNested(Boolean nested) {
         this.nested = nested;
     }
 
-    public void setUniqueNavElements(boolean uniqueNavElements) {
+    public void setUniqueNavElements(Boolean uniqueNavElements) {
         this.uniqueNavElements = uniqueNavElements;
     }
 
@@ -700,11 +702,11 @@ public class SwiperConfig {
         this.effect = effect;
     }
 
-    public void setRunCallbacksOnInit(boolean runCallbacksOnInit) {
+    public void setRunCallbacksOnInit(Boolean runCallbacksOnInit) {
         this.runCallbacksOnInit = runCallbacksOnInit;
     }
 
-    public void setWatchOverflow(boolean watchOverflow) {
+    public void setWatchOverflow(Boolean watchOverflow) {
         this.watchOverflow = watchOverflow;
     }
 
@@ -712,15 +714,15 @@ public class SwiperConfig {
         this.on = on;
     }
 
-    public void setSpaceBetween(double spaceBetween) {
+    public void setSpaceBetween(Double spaceBetween) {
         this.spaceBetween = spaceBetween;
     }
 
-    public void setSlidesPerView(double slidesPerView) {
+    public void setSlidesPerView(Double slidesPerView) {
         this.slidesPerView = slidesPerView;
     }
 
-    public void setSlidesPerColumn(double slidesPerColumn) {
+    public void setSlidesPerColumn(Double slidesPerColumn) {
         this.slidesPerColumn = slidesPerColumn;
     }
 
@@ -728,31 +730,31 @@ public class SwiperConfig {
         this.slidesPerColumnFill = slidesPerColumnFill;
     }
 
-    public void setSlidesPerGroup(double slidesPerGroup) {
+    public void setSlidesPerGroup(Double slidesPerGroup) {
         this.slidesPerGroup = slidesPerGroup;
     }
 
-    public void setCenteredSlides(boolean centeredSlides) {
+    public void setCenteredSlides(Boolean centeredSlides) {
         this.centeredSlides = centeredSlides;
     }
 
-    public void setSlidesOffsetBefore(double slidesOffsetBefore) {
+    public void setSlidesOffsetBefore(Double slidesOffsetBefore) {
         this.slidesOffsetBefore = slidesOffsetBefore;
     }
 
-    public void setSlidesOffsetAfter(double slidesOffsetAfter) {
+    public void setSlidesOffsetAfter(Double slidesOffsetAfter) {
         this.slidesOffsetAfter = slidesOffsetAfter;
     }
 
-    public void setNormalizeSlideIndex(boolean normalizeSlideIndex) {
+    public void setNormalizeSlideIndex(Boolean normalizeSlideIndex) {
         this.normalizeSlideIndex = normalizeSlideIndex;
     }
 
-    public void setCenterInsufficientSlides(boolean centerInsufficientSlides) {
+    public void setCenterInsufficientSlides(Boolean centerInsufficientSlides) {
         this.centerInsufficientSlides = centerInsufficientSlides;
     }
 
-    public void setGrabCursor(boolean grabCursor) {
+    public void setGrabCursor(Boolean grabCursor) {
         this.grabCursor = grabCursor;
     }
 
@@ -760,95 +762,95 @@ public class SwiperConfig {
         this.touchEventsTarget = touchEventsTarget;
     }
 
-    public void setTouchRatio(double touchRatio) {
+    public void setTouchRatio(Double touchRatio) {
         this.touchRatio = touchRatio;
     }
 
-    public void setTouchAngle(double touchAngle) {
+    public void setTouchAngle(Double touchAngle) {
         this.touchAngle = touchAngle;
     }
 
-    public void setSimulateTouch(boolean simulateTouch) {
+    public void setSimulateTouch(Boolean simulateTouch) {
         this.simulateTouch = simulateTouch;
     }
 
-    public void setShortSwipes(boolean shortSwipes) {
+    public void setShortSwipes(Boolean shortSwipes) {
         this.shortSwipes = shortSwipes;
     }
 
-    public void setLongSwipes(boolean longSwipes) {
+    public void setLongSwipes(Boolean longSwipes) {
         this.longSwipes = longSwipes;
     }
 
-    public void setLongSwipesRatio(double longSwipesRatio) {
+    public void setLongSwipesRatio(Double longSwipesRatio) {
         this.longSwipesRatio = longSwipesRatio;
     }
 
-    public void setLongSwipesMs(double longSwipesMs) {
+    public void setLongSwipesMs(Double longSwipesMs) {
         this.longSwipesMs = longSwipesMs;
     }
 
-    public void setFollowFinger(boolean followFinger) {
+    public void setFollowFinger(Boolean followFinger) {
         this.followFinger = followFinger;
     }
 
-    public void setAllowTouchMove(boolean allowTouchMove) {
+    public void setAllowTouchMove(Boolean allowTouchMove) {
         this.allowTouchMove = allowTouchMove;
     }
 
-    public void setThreshold(double threshold) {
+    public void setThreshold(Double threshold) {
         this.threshold = threshold;
     }
 
-    public void setTouchStartPreventDefault(boolean touchStartPreventDefault) {
+    public void setTouchStartPreventDefault(Boolean touchStartPreventDefault) {
         this.touchStartPreventDefault = touchStartPreventDefault;
     }
 
-    public void setTouchStartForcePreventDefault(boolean touchStartForcePreventDefault) {
+    public void setTouchStartForcePreventDefault(Boolean touchStartForcePreventDefault) {
         this.touchStartForcePreventDefault = touchStartForcePreventDefault;
     }
 
-    public void setTouchMoveStopPropagation(boolean touchMoveStopPropagation) {
+    public void setTouchMoveStopPropagation(Boolean touchMoveStopPropagation) {
         this.touchMoveStopPropagation = touchMoveStopPropagation;
     }
 
-    public void setIOSEdgeSwipeDetection(boolean iOSEdgeSwipeDetection) {
+    public void setIOSEdgeSwipeDetection(Boolean iOSEdgeSwipeDetection) {
         this.iOSEdgeSwipeDetection = iOSEdgeSwipeDetection;
     }
 
-    public void setIOSEdgeSwipeThreshold(double iOSEdgeSwipeThreshold) {
+    public void setIOSEdgeSwipeThreshold(Double iOSEdgeSwipeThreshold) {
         this.iOSEdgeSwipeThreshold = iOSEdgeSwipeThreshold;
     }
 
-    public void setTouchReleaseOnEdges(boolean touchReleaseOnEdges) {
+    public void setTouchReleaseOnEdges(Boolean touchReleaseOnEdges) {
         this.touchReleaseOnEdges = touchReleaseOnEdges;
     }
 
-    public void setPassiveListeners(boolean passiveListeners) {
+    public void setPassiveListeners(Boolean passiveListeners) {
         this.passiveListeners = passiveListeners;
     }
 
-    public void setResistance(boolean resistance) {
+    public void setResistance(Boolean resistance) {
         this.resistance = resistance;
     }
 
-    public void setResistanceRatio(double resistanceRatio) {
+    public void setResistanceRatio(Double resistanceRatio) {
         this.resistanceRatio = resistanceRatio;
     }
 
-    public void setPreventInteractionOnTransition(boolean preventInteractionOnTransition) {
+    public void setPreventInteractionOnTransition(Boolean preventInteractionOnTransition) {
         this.preventInteractionOnTransition = preventInteractionOnTransition;
     }
 
-    public void setAllowSlidePrev(boolean allowSlidePrev) {
+    public void setAllowSlidePrev(Boolean allowSlidePrev) {
         this.allowSlidePrev = allowSlidePrev;
     }
 
-    public void setAllowSlideNext(boolean allowSlideNext) {
+    public void setAllowSlideNext(Boolean allowSlideNext) {
         this.allowSlideNext = allowSlideNext;
     }
 
-    public void setNoSwiping(boolean noSwiping) {
+    public void setNoSwiping(Boolean noSwiping) {
         this.noSwiping = noSwiping;
     }
 
@@ -864,79 +866,79 @@ public class SwiperConfig {
         this.swipeHandler = swipeHandler;
     }
 
-    public void setPreventClicks(boolean preventClicks) {
+    public void setPreventClicks(Boolean preventClicks) {
         this.preventClicks = preventClicks;
     }
 
-    public void setPreventClicksPropagation(boolean preventClicksPropagation) {
+    public void setPreventClicksPropagation(Boolean preventClicksPropagation) {
         this.preventClicksPropagation = preventClicksPropagation;
     }
 
-    public void setSlideToClickedSlide(boolean slideToClickedSlide) {
+    public void setSlideToClickedSlide(Boolean slideToClickedSlide) {
         this.slideToClickedSlide = slideToClickedSlide;
     }
 
-    public void setFreeMode(boolean freeMode) {
+    public void setFreeMode(Boolean freeMode) {
         this.freeMode = freeMode;
     }
 
-    public void setFreeModeMomentum(boolean freeModeMomentum) {
+    public void setFreeModeMomentum(Boolean freeModeMomentum) {
         this.freeModeMomentum = freeModeMomentum;
     }
 
-    public void setFreeModeMomentumRatio(double freeModeMomentumRatio) {
+    public void setFreeModeMomentumRatio(Double freeModeMomentumRatio) {
         this.freeModeMomentumRatio = freeModeMomentumRatio;
     }
 
-    public void setFreeModeMomentumVelocityRatio(double freeModeMomentumVelocityRatio) {
+    public void setFreeModeMomentumVelocityRatio(Double freeModeMomentumVelocityRatio) {
         this.freeModeMomentumVelocityRatio = freeModeMomentumVelocityRatio;
     }
 
-    public void setFreeModeMomentumBounce(boolean freeModeMomentumBounce) {
+    public void setFreeModeMomentumBounce(Boolean freeModeMomentumBounce) {
         this.freeModeMomentumBounce = freeModeMomentumBounce;
     }
 
-    public void setFreeModeMomentumBounceRatio(double freeModeMomentumBounceRatio) {
+    public void setFreeModeMomentumBounceRatio(Double freeModeMomentumBounceRatio) {
         this.freeModeMomentumBounceRatio = freeModeMomentumBounceRatio;
     }
 
-    public void setFreeModeMinimumVelocity(double freeModeMinimumVelocity) {
+    public void setFreeModeMinimumVelocity(Double freeModeMinimumVelocity) {
         this.freeModeMinimumVelocity = freeModeMinimumVelocity;
     }
 
-    public void setFreeModeSticky(boolean freeModeSticky) {
+    public void setFreeModeSticky(Boolean freeModeSticky) {
         this.freeModeSticky = freeModeSticky;
     }
 
-    public void setWatchSlidesProgress(boolean watchSlidesProgress) {
+    public void setWatchSlidesProgress(Boolean watchSlidesProgress) {
         this.watchSlidesProgress = watchSlidesProgress;
     }
 
-    public void setWatchSlidesVisibility(boolean watchSlidesVisibility) {
+    public void setWatchSlidesVisibility(Boolean watchSlidesVisibility) {
         this.watchSlidesVisibility = watchSlidesVisibility;
     }
 
-    public void setPreloadImages(boolean preloadImages) {
+    public void setPreloadImages(Boolean preloadImages) {
         this.preloadImages = preloadImages;
     }
 
-    public void setUpdateOnImagesReady(boolean updateOnImagesReady) {
+    public void setUpdateOnImagesReady(Boolean updateOnImagesReady) {
         this.updateOnImagesReady = updateOnImagesReady;
     }
 
-    public void setLoop(boolean loop) {
+    public void setLoop(Boolean loop) {
         this.loop = loop;
     }
 
-    public void setLoopAdditionalSlides(double loopAdditionalSlides) {
+    public void setLoopAdditionalSlides(Double loopAdditionalSlides) {
         this.loopAdditionalSlides = loopAdditionalSlides;
     }
 
-    public void setLoopedSlides(double loopedSlides) {
+    public void setLoopedSlides(Double loopedSlides) {
         this.loopedSlides = loopedSlides;
     }
 
-    public void setLoopFillGroupWithBlank(boolean loopFillGroupWithBlank) {
+    public void setLoopFillGroupWithBlank(Boolean loopFillGroupWithBlank) {
         this.loopFillGroupWithBlank = loopFillGroupWithBlank;
     }
 
@@ -944,19 +946,19 @@ public class SwiperConfig {
         this.breakpoints = breakpoints;
     }
 
-    public void setBreakpointsInverse(boolean breakpointsInverse) {
+    public void setBreakpointsInverse(Boolean breakpointsInverse) {
         this.breakpointsInverse = breakpointsInverse;
     }
 
-    public void setObserver(boolean observer) {
+    public void setObserver(Boolean observer) {
         this.observer = observer;
     }
 
-    public void setObserveParents(boolean observeParents) {
+    public void setObserveParents(Boolean observeParents) {
         this.observeParents = observeParents;
     }
 
-    public void setObserveSlideChildren(boolean observeSlideChildren) {
+    public void setObserveSlideChildren(Boolean observeSlideChildren) {
         this.observeSlideChildren = observeSlideChildren;
     }
 
