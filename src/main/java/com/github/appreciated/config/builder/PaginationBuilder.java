@@ -24,7 +24,7 @@ public class PaginationBuilder {
     private PaginationBuilder() {
     }
 
-    public static PaginationBuilder aPagination() {
+    public static PaginationBuilder get() {
         return new PaginationBuilder();
     }
 

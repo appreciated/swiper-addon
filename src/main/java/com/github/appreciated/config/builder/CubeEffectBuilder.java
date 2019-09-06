@@ -11,7 +11,7 @@ public class CubeEffectBuilder {
     private CubeEffectBuilder() {
     }
 
-    public static CubeEffectBuilder aCubeEffect() {
+    public static CubeEffectBuilder get() {
         return new CubeEffectBuilder();
     }
 

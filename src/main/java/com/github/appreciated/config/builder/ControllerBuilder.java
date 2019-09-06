@@ -11,7 +11,7 @@ public class ControllerBuilder {
     private ControllerBuilder() {
     }
 
-    public static ControllerBuilder aController() {
+    public static ControllerBuilder get() {
         return new ControllerBuilder();
     }
 

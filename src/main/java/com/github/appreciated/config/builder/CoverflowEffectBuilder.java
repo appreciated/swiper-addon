@@ -12,7 +12,7 @@ public class CoverflowEffectBuilder {
     private CoverflowEffectBuilder() {
     }
 
-    public static CoverflowEffectBuilder aCoverflowEffect() {
+    public static CoverflowEffectBuilder get() {
         return new CoverflowEffectBuilder();
     }
 

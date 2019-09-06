@@ -12,7 +12,7 @@ public class NavigationBuilder {
     private NavigationBuilder() {
     }
 
-    public static NavigationBuilder aNavigation() {
+    public static NavigationBuilder get() {
         return new NavigationBuilder();
     }
 

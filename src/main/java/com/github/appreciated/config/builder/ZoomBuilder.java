@@ -12,7 +12,7 @@ public class ZoomBuilder {
     private ZoomBuilder() {
     }
 
-    public static ZoomBuilder aZoom() {
+    public static ZoomBuilder get() {
         return new ZoomBuilder();
     }
 

@@ -11,7 +11,7 @@ public class ThumbsBuilder {
     private ThumbsBuilder() {
     }
 
-    public static ThumbsBuilder aThumbs() {
+    public static ThumbsBuilder get() {
         return new ThumbsBuilder();
     }
 

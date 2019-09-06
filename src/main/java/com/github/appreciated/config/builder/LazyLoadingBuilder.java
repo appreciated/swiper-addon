@@ -14,7 +14,7 @@ public class LazyLoadingBuilder {
     private LazyLoadingBuilder() {
     }
 
-    public static LazyLoadingBuilder aLazyLoading() {
+    public static LazyLoadingBuilder get() {
         return new LazyLoadingBuilder();
     }
 

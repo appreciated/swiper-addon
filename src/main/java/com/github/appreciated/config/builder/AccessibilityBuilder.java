@@ -14,7 +14,7 @@ public class AccessibilityBuilder {
     private AccessibilityBuilder() {
     }
 
-    public static AccessibilityBuilder aAccessibility() {
+    public static AccessibilityBuilder get() {
         return new AccessibilityBuilder();
     }
 

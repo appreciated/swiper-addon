@@ -9,7 +9,7 @@ public class HistoryNavigationBuilder {
     private HistoryNavigationBuilder() {
     }
 
-    public static HistoryNavigationBuilder aHistoryNavigation() {
+    public static HistoryNavigationBuilder get() {
         return new HistoryNavigationBuilder();
     }
 

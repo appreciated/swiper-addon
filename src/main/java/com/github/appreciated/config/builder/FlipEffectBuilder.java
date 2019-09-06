@@ -9,7 +9,7 @@ public class FlipEffectBuilder {
     private FlipEffectBuilder() {
     }
 
-    public static FlipEffectBuilder aFlipEffect() {
+    public static FlipEffectBuilder get() {
         return new FlipEffectBuilder();
     }
 

@@ -9,7 +9,7 @@ public class KeyboardControlBuilder {
     private KeyboardControlBuilder() {
     }
 
-    public static KeyboardControlBuilder aKeyboardControl() {
+    public static KeyboardControlBuilder get() {
         return new KeyboardControlBuilder();
     }
 

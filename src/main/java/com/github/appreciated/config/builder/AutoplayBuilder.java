@@ -12,7 +12,7 @@ public class AutoplayBuilder {
     private AutoplayBuilder() {
     }
 
-    public static AutoplayBuilder aAutoplay() {
+    public static AutoplayBuilder get() {
         return new AutoplayBuilder();
     }
 

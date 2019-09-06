@@ -14,7 +14,7 @@ public class ScrollbarBuilder {
     private ScrollbarBuilder() {
     }
 
-    public static ScrollbarBuilder aScrollbar() {
+    public static ScrollbarBuilder get() {
         return new ScrollbarBuilder();
     }
 

@@ -12,7 +12,7 @@ public class MousewheelControlBuilder {
     private MousewheelControlBuilder() {
     }
 
-    public static MousewheelControlBuilder aMousewheelControl() {
+    public static MousewheelControlBuilder get() {
         return new MousewheelControlBuilder();
     }
 
