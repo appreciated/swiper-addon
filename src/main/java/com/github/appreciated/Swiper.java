@@ -26,14 +26,14 @@ public class Swiper extends Div implements HasComponents, HasSize {
     private SwiperConfig config;
 
     public Swiper(SwiperConfig config) {
+        setConfig(config);
         addClassName("swiper-container");
         wrapper.addClassName("swiper-wrapper");
         wrapper.setSizeFull();
-        pagination.addClassName("swiper-pagination");
-        buttonPrev.addClassName("swiper-button-prev");
-        buttonNext.addClassName("swiper-button-next");
+        initNextButton();
+        initPreviousButton();
+        initPagination();
         super.add(wrapper);
-        setConfig(config);
         setSizeFull();
     }
 
@@ -41,20 +41,26 @@ public class Swiper extends Div implements HasComponents, HasSize {
         this.config = config;
     }
 
-    public Swiper withNextButton() {
-        super.add(buttonNext);
-        return this;
+    private void initNextButton() {
+        if (config.getNavigation() != null) {
+            buttonPrev.addClassName("swiper-button-next");
+            super.add(buttonNext);
+
+        }
     }
 
-    public Swiper withPreviousButton() {
-        super.add(buttonPrev);
-        return this;
+    public void initPreviousButton() {
+        if (config.getNavigation() != null) {
+            buttonPrev.addClassName("swiper-button-prev");
+            super.add(buttonNext);
+        }
     }
 
-
-    public Swiper withPagination() {
-        super.add(pagination);
-        return this;
+    public void initPagination() {
+        if (config.getPagination() != null && config.getPagination().getEl() != null) {
+            pagination.addClassName(config.getPagination().getEl().replace(".", ""));
+            super.add(pagination);
+        }
     }
 
     @Override

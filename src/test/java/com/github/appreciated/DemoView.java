@@ -1,29 +1,55 @@
 package com.github.appreciated;
 
+import com.github.appreciated.card.RippleClickableCard;
 import com.github.appreciated.config.Direction;
+import com.github.appreciated.config.builder.PaginationBuilder;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
-import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.theme.Theme;
-import com.vaadin.flow.theme.lumo.Lumo;
-import com.vaadin.flow.theme.material.Material;
 
 @Route("")
-@Theme(value = Material.class, variant = Lumo.LIGHT)
 public class DemoView extends Div {
 
     public DemoView() {
         setSizeFull();
         addHorizontal();
+        addHorizontalWithPagination();
+        addHorizontalMulti();
         addVertical();
     }
 
     private void addHorizontal() {
         Swiper sw = new Swiper(SwiperConfigBuilder.get()
                 .withDirection(Direction.HORIZONTAL)
-                .withLoop(true)
+                .withAllowSlidePrev(true)
+                .withAllowSlideNext(true)
+                .build()
+        );
+        sw.setHeight("300px");
+        sw.setWidth("100%");
+        sw.add(getSlide(), getSlide(), getSlide(), getSlide());
+        add(sw);
+    }
+
+    private void addHorizontalWithPagination() {
+        Swiper sw = new Swiper(SwiperConfigBuilder.get()
+                .withDirection(Direction.HORIZONTAL)
+                .withPagination(PaginationBuilder.get().withEl(".swiper-pagination").build())
+                .build()
+        );
+        sw.setHeight("300px");
+        sw.setWidth("100%");
+        sw.add(getSlide(), getSlide(), getSlide(), getSlide());
+        add(sw);
+    }
+
+    private void addHorizontalMulti() {
+        Swiper sw = new Swiper(SwiperConfigBuilder.get()
+                .withDirection(Direction.HORIZONTAL)
+                .withSlidesPerView("auto")
+                .withCenteredSlides(true)
+                .withSpaceBetween(30.0)
                 .build()
         );
         sw.setHeight("300px");
@@ -43,9 +69,11 @@ public class DemoView extends Div {
         add(sw);
     }
 
-    HorizontalLayout getSlide() {
-        HorizontalLayout slide = new HorizontalLayout();
-        slide.setSizeFull();
+    RippleClickableCard getSlide() {
+        RippleClickableCard slide = new RippleClickableCard();
+        slide.setElevationOnActionEnabled(true);
+        slide.getContent().setWidth("300px");
+        slide.getContent().setHeight("150px");
         slide.add(new Label("Meow"));
         slide.setAlignItems(FlexComponent.Alignment.CENTER);
         slide.setJustifyContentMode(FlexComponent.JustifyContentMode.CENTER);

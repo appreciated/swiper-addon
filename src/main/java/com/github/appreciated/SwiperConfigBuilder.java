@@ -9,7 +9,6 @@ public class SwiperConfigBuilder {
     private CubeEffect cubeEffect;
     private FadeEffect fadeEffect;
     private FlipEffect flipEffect;
-    private HashNavigation hashNavigation;
     private HistoryNavigation historyNavigation;
     private KeyboardControl keyboardControl;
     private LazyLoading lazyLoading;
@@ -145,11 +144,6 @@ public class SwiperConfigBuilder {
 
     public SwiperConfigBuilder withFlipEffect(FlipEffect flipEffect) {
         this.flipEffect = flipEffect;
-        return this;
-    }
-
-    public SwiperConfigBuilder withHashNavigation(HashNavigation hashNavigation) {
-        this.hashNavigation = hashNavigation;
         return this;
     }
 
@@ -661,7 +655,6 @@ public class SwiperConfigBuilder {
         swiperConfig.setCubeEffect(cubeEffect);
         swiperConfig.setFadeEffect(fadeEffect);
         swiperConfig.setFlipEffect(flipEffect);
-        swiperConfig.setHashNavigation(hashNavigation);
         swiperConfig.setHistoryNavigation(historyNavigation);
         swiperConfig.setKeyboardControl(keyboardControl);
         swiperConfig.setLazyLoading(lazyLoading);

@@ -10,7 +10,6 @@ public class SwiperConfig {
     private CubeEffect cubeEffect;
     private FadeEffect fadeEffect;
     private FlipEffect flipEffect;
-    private HashNavigation hashNavigation;
     private HistoryNavigation historyNavigation;
     private KeyboardControl keyboardControl;
     private LazyLoading lazyLoading;
@@ -315,7 +314,6 @@ public class SwiperConfig {
         this.iOSEdgeSwipeDetection = iOSEdgeSwipeDetection;
     }
 
-
     public Autoplay getAutoplay() {
         return autoplay;
     }
@@ -338,10 +336,6 @@ public class SwiperConfig {
 
     public FlipEffect getFlipEffect() {
         return flipEffect;
-    }
-
-    public HashNavigation getHashNavigation() {
-        return hashNavigation;
     }
 
     public HistoryNavigation getHistoryNavigation() {
@@ -766,10 +760,6 @@ public class SwiperConfig {
 
     public void setFlipEffect(FlipEffect flipEffect) {
         this.flipEffect = flipEffect;
-    }
-
-    public void setHashNavigation(HashNavigation hashNavigation) {
-        this.hashNavigation = hashNavigation;
     }
 
     public void setHistoryNavigation(HistoryNavigation historyNavigation) {
