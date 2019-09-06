@@ -547,6 +547,12 @@ public class SwiperConfigBuilder {
         return this;
     }
 
+    /**
+     * Also know as infinite scrolling Do not use this method with Webcomponents that keep state in JS since these will lose their state! once they are swapped to the back/top
+     *
+     * @param loop whether the elements should be appended to the back / the front once these are not visible anymore
+     * @return fluent builder
+     */
     public SwiperConfigBuilder withLoop(Boolean loop) {
         this.loop = loop;
         return this;

@@ -87,7 +87,8 @@ public class DemoView extends VerticalLayout {
     private void addVertical() {
         Swiper sw = new Swiper(SwiperConfigBuilder.get()
                 .withDirection(Direction.VERTICAL)
-                .withLoop(true).build()
+                .withLoop(true)
+                .build()
         );
         sw.setHeight("300px");
         sw.setWidth("100%");
