@@ -114,7 +114,7 @@ public class SwiperConfigBuilder {
     private SwiperConfigBuilder() {
     }
 
-    public static SwiperConfigBuilder aSwiperConfig() {
+    public static SwiperConfigBuilder get() {
         return new SwiperConfigBuilder();
     }
 

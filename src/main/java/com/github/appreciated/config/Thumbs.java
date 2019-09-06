@@ -4,9 +4,12 @@ import com.github.appreciated.Swiper;
 
 public class Thumbs {
 
-    Swiper swiper;
-    String slideThumbActiveClass;
-    String thumbsContainerClass;
+    private Swiper swiper;
+    private String slideThumbActiveClass;
+    private String thumbsContainerClass;
+
+    public Thumbs() {
+    }
 
     public Swiper getSwiper() {
         return swiper;
@@ -31,4 +34,5 @@ public class Thumbs {
     public void setThumbsContainerClass(String thumbsContainerClass) {
         this.thumbsContainerClass = thumbsContainerClass;
     }
+
 }

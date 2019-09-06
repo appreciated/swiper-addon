@@ -2,13 +2,28 @@ package com.github.appreciated.config;
 
 public class MousewheelControl {
 
-    Boolean forceToAxis;
-    Boolean releaseOnEdges;
-    Boolean invert;
-    Double sensitivity;
-    String eventsTarged;
+    private Boolean forceToAxis;
+    private Boolean releaseOnEdges;
+    private Boolean invert;
+    private Double sensitivity;
+    private String eventsTarged;
+
+    public MousewheelControl() {
+    }
 
     public Boolean isForceToAxis() {
+        return forceToAxis;
+    }
+
+    public Boolean isReleaseOnEdges() {
+        return releaseOnEdges;
+    }
+
+    public Boolean isInvert() {
+        return invert;
+    }
+
+    public Boolean getForceToAxis() {
         return forceToAxis;
     }
 
@@ -16,7 +31,7 @@ public class MousewheelControl {
         this.forceToAxis = forceToAxis;
     }
 
-    public Boolean isReleaseOnEdges() {
+    public Boolean getReleaseOnEdges() {
         return releaseOnEdges;
     }
 
@@ -24,7 +39,7 @@ public class MousewheelControl {
         this.releaseOnEdges = releaseOnEdges;
     }
 
-    public Boolean isInvert() {
+    public Boolean getInvert() {
         return invert;
     }
 
@@ -47,4 +62,5 @@ public class MousewheelControl {
     public void setEventsTarged(String eventsTarged) {
         this.eventsTarged = eventsTarged;
     }
+
 }

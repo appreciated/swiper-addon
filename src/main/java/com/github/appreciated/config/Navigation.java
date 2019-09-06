@@ -1,11 +1,18 @@
 package com.github.appreciated.config;
 
 public class Navigation {
-    String nextEl;
-    String prevEl;
-    Boolean hideOnClick;
-    String disabledClass;
-    String hiddenClass;
+    private String nextEl;
+    private String prevEl;
+    private Boolean hideOnClick;
+    private String disabledClass;
+    private String hiddenClass;
+
+    public Navigation() {
+    }
+
+    public Boolean isHideOnClick() {
+        return hideOnClick;
+    }
 
     public String getNextEl() {
         return nextEl;
@@ -23,7 +30,7 @@ public class Navigation {
         this.prevEl = prevEl;
     }
 
-    public Boolean isHideOnClick() {
+    public Boolean getHideOnClick() {
         return hideOnClick;
     }
 
@@ -46,4 +53,5 @@ public class Navigation {
     public void setHiddenClass(String hiddenClass) {
         this.hiddenClass = hiddenClass;
     }
+
 }

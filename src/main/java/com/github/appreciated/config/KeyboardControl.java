@@ -1,10 +1,21 @@
 package com.github.appreciated.config;
 
 public class KeyboardControl {
-    Boolean enabled;
-    Boolean onlyInViewport;
+    private Boolean enabled;
+    private Boolean onlyInViewport;
+
+    public KeyboardControl() {
+    }
 
     public Boolean isEnabled() {
+        return enabled;
+    }
+
+    public Boolean isOnlyInViewport() {
+        return onlyInViewport;
+    }
+
+    public Boolean getEnabled() {
         return enabled;
     }
 
@@ -12,11 +23,12 @@ public class KeyboardControl {
         this.enabled = enabled;
     }
 
-    public Boolean isOnlyInViewport() {
+    public Boolean getOnlyInViewport() {
         return onlyInViewport;
     }
 
     public void setOnlyInViewport(Boolean onlyInViewport) {
         this.onlyInViewport = onlyInViewport;
     }
+
 }

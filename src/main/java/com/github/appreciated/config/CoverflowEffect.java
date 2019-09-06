@@ -1,13 +1,20 @@
 package com.github.appreciated.config;
 
 public class CoverflowEffect {
-    Boolean slideShadows;
-    Double rotate;
-    Double stretch;
-    Double depth;
-    Double modifier;
+    private Boolean slideShadows;
+    private Double rotate;
+    private Double stretch;
+    private Double depth;
+    private Double modifier;
+
+    public CoverflowEffect() {
+    }
 
     public Boolean isSlideShadows() {
+        return slideShadows;
+    }
+
+    public Boolean getSlideShadows() {
         return slideShadows;
     }
 
@@ -46,4 +53,5 @@ public class CoverflowEffect {
     public void setModifier(Double modifier) {
         this.modifier = modifier;
     }
-};
+
+}

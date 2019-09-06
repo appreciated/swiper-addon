@@ -4,9 +4,16 @@ import com.github.appreciated.Swiper;
 
 public class Controller {
 
-    Swiper control;
-    Boolean inverse;
-    String by;
+    private Swiper control;
+    private Boolean inverse;
+    private String by;
+
+    public Controller() {
+    }
+
+    public Boolean isInverse() {
+        return inverse;
+    }
 
     public Swiper getControl() {
         return control;
@@ -16,7 +23,7 @@ public class Controller {
         this.control = control;
     }
 
-    public Boolean isInverse() {
+    public Boolean getInverse() {
         return inverse;
     }
 
@@ -31,4 +38,5 @@ public class Controller {
     public void setBy(String by) {
         this.by = by;
     }
+
 }

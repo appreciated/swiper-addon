@@ -1,15 +1,22 @@
 package com.github.appreciated.config;
 
 public class Accessibility {
-    Boolean enabled;
-    String prevSlideMessage;
-    String nextSlideMessage;
-    String firstSlideMessage;
-    String lastSlideMessage;
-    String paginationBulletMessage;
-    String notificationClass;
+    private Boolean enabled;
+    private String prevSlideMessage;
+    private String nextSlideMessage;
+    private String firstSlideMessage;
+    private String lastSlideMessage;
+    private String paginationBulletMessage;
+    private String notificationClass;
+
+    public Accessibility() {
+    }
 
     public Boolean isEnabled() {
+        return enabled;
+    }
+
+    public Boolean getEnabled() {
         return enabled;
     }
 
@@ -64,4 +71,5 @@ public class Accessibility {
     public void setNotificationClass(String notificationClass) {
         this.notificationClass = notificationClass;
     }
+
 }

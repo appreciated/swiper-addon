@@ -1,10 +1,17 @@
 package com.github.appreciated.config;
 
 public class HistoryNavigation {
-    Boolean replaceState;
-    String key;
+    private Boolean replaceState;
+    private String key;
+
+    public HistoryNavigation() {
+    }
 
     public Boolean isReplaceState() {
+        return replaceState;
+    }
+
+    public Boolean getReplaceState() {
         return replaceState;
     }
 
@@ -19,4 +26,5 @@ public class HistoryNavigation {
     public void setKey(String key) {
         this.key = key;
     }
+
 }

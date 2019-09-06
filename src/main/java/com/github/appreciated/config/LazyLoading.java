@@ -1,15 +1,26 @@
 package com.github.appreciated.config;
 
 public class LazyLoading {
-    Boolean loadPrevNext;
-    Double loadPrevNextAmount;
-    Boolean loadOnTransitionStart;
-    String elementClass;
-    String loadingClass;
-    String loadedClass;
-    String preloaderClass;
+    private Boolean loadPrevNext;
+    private Double loadPrevNextAmount;
+    private Boolean loadOnTransitionStart;
+    private String elementClass;
+    private String loadingClass;
+    private String loadedClass;
+    private String preloaderClass;
+
+    public LazyLoading() {
+    }
 
     public Boolean isLoadPrevNext() {
+        return loadPrevNext;
+    }
+
+    public Boolean isLoadOnTransitionStart() {
+        return loadOnTransitionStart;
+    }
+
+    public Boolean getLoadPrevNext() {
         return loadPrevNext;
     }
 
@@ -25,7 +36,7 @@ public class LazyLoading {
         this.loadPrevNextAmount = loadPrevNextAmount;
     }
 
-    public Boolean isLoadOnTransitionStart() {
+    public Boolean getLoadOnTransitionStart() {
         return loadOnTransitionStart;
     }
 
@@ -64,4 +75,5 @@ public class LazyLoading {
     public void setPreloaderClass(String preloaderClass) {
         this.preloaderClass = preloaderClass;
     }
+
 }

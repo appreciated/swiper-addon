@@ -1,10 +1,21 @@
 package com.github.appreciated.config;
 
 public class FlipEffect {
-    Boolean slideShadows;
-    Boolean limitRotation;
+    private Boolean slideShadows;
+    private Boolean limitRotation;
+
+    public FlipEffect() {
+    }
 
     public Boolean isSlideShadows() {
+        return slideShadows;
+    }
+
+    public Boolean isLimitRotation() {
+        return limitRotation;
+    }
+
+    public Boolean getSlideShadows() {
         return slideShadows;
     }
 
@@ -12,11 +23,12 @@ public class FlipEffect {
         this.slideShadows = slideShadows;
     }
 
-    public Boolean isLimitRotation() {
+    public Boolean getLimitRotation() {
         return limitRotation;
     }
 
     public void setLimitRotation(Boolean limitRotation) {
         this.limitRotation = limitRotation;
     }
+
 }

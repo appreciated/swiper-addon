@@ -1,32 +1,42 @@
 package com.github.appreciated.config;
 
 public class Pagination {
-    String el;
-    String type;
-    String bulletElement;
-    Boolean dynamicBullets;
-    Double dynamicMainBullets;
-    Boolean hideOnClick;
-    Boolean clickable;
-    Boolean progressbarOpposite;
-    String bulletClass;
-    String bulletActiveClass;
-    String modifierClass;
-    String currentClass;
-    String totalClass;
-    String hiddenClass;
-    String progressbarFillClass;
-    String clickableClass;
-    String lockClass;
+    private String el;
+    private String type;
+    private String bulletElement;
+    private Boolean dynamicBullets;
+    private Double dynamicMainBullets;
+    private Boolean hideOnClick;
+    private Boolean clickable;
+    private Boolean progressbarOpposite;
+    private String bulletClass;
+    private String bulletActiveClass;
+    private String modifierClass;
+    private String currentClass;
+    private String totalClass;
+    private String hiddenClass;
+    private String progressbarFillClass;
+    private String clickableClass;
+    private String lockClass;
 
-    /**
-     * function(Double)   formatFractionCurrent;
-     * function(Double)   formatFractionTotal  ;
-     * function(index, className)   renderBullet         ;
-     * function(currentClass, totalClass)   renderFraction       ;
-     * function(progressbarFillClass)   renderProgressbar    ;
-     * function(swiper, current, total)   renderCustom         ;
-     */
+    public Pagination() {
+    }
+
+    public Boolean isDynamicBullets() {
+        return dynamicBullets;
+    }
+
+    public Boolean isHideOnClick() {
+        return hideOnClick;
+    }
+
+    public Boolean isClickable() {
+        return clickable;
+    }
+
+    public Boolean isProgressbarOpposite() {
+        return progressbarOpposite;
+    }
 
     public String getEl() {
         return el;
@@ -52,7 +62,7 @@ public class Pagination {
         this.bulletElement = bulletElement;
     }
 
-    public Boolean isDynamicBullets() {
+    public Boolean getDynamicBullets() {
         return dynamicBullets;
     }
 
@@ -68,7 +78,7 @@ public class Pagination {
         this.dynamicMainBullets = dynamicMainBullets;
     }
 
-    public Boolean isHideOnClick() {
+    public Boolean getHideOnClick() {
         return hideOnClick;
     }
 
@@ -76,7 +86,7 @@ public class Pagination {
         this.hideOnClick = hideOnClick;
     }
 
-    public Boolean isClickable() {
+    public Boolean getClickable() {
         return clickable;
     }
 
@@ -84,7 +94,7 @@ public class Pagination {
         this.clickable = clickable;
     }
 
-    public Boolean isProgressbarOpposite() {
+    public Boolean getProgressbarOpposite() {
         return progressbarOpposite;
     }
 
@@ -163,4 +173,5 @@ public class Pagination {
     public void setLockClass(String lockClass) {
         this.lockClass = lockClass;
     }
+
 }
