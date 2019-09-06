@@ -2,9 +2,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.appreciated</groupId>
-    <artifactId>swiper-addon</artifactId>
+    <artifactId>swiper-flow</artifactId>
     <version>2.0.0.beta1</version>
-    <name>swiper-addon</name>
+    <name>swiper-flow</name>
     <description>Integration of swiper for Vaadin platform 14</description>
 
     <properties>
