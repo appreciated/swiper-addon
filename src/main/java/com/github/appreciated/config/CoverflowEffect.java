@@ -1,49 +1,49 @@
 package com.github.appreciated.config;
 
 public class CoverflowEffect {
-    boolean slideShadows;
-    double rotate;
-    double stretch;
-    double depth;
-    double modifier;
+    Boolean slideShadows;
+    Double rotate;
+    Double stretch;
+    Double depth;
+    Double modifier;
 
-    public boolean isSlideShadows() {
+    public Boolean isSlideShadows() {
         return slideShadows;
     }
 
-    public void setSlideShadows(boolean slideShadows) {
+    public void setSlideShadows(Boolean slideShadows) {
         this.slideShadows = slideShadows;
     }
 
-    public double getRotate() {
+    public Double getRotate() {
         return rotate;
     }
 
-    public void setRotate(double rotate) {
+    public void setRotate(Double rotate) {
         this.rotate = rotate;
     }
 
-    public double getStretch() {
+    public Double getStretch() {
         return stretch;
     }
 
-    public void setStretch(double stretch) {
+    public void setStretch(Double stretch) {
         this.stretch = stretch;
     }
 
-    public double getDepth() {
+    public Double getDepth() {
         return depth;
     }
 
-    public void setDepth(double depth) {
+    public void setDepth(Double depth) {
         this.depth = depth;
     }
 
-    public double getModifier() {
+    public Double getModifier() {
         return modifier;
     }
 
-    public void setModifier(double modifier) {
+    public void setModifier(Double modifier) {
         this.modifier = modifier;
     }
 };

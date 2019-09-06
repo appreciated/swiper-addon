@@ -2,9 +2,9 @@ package com.github.appreciated.config;
 
 public class Scrollbar {
     String el;
-    boolean hide;
-    boolean draggable;
-    boolean snapOnRelease;
+    Boolean hide;
+    Boolean draggable;
+    Boolean snapOnRelease;
     String dragSize;
     String lockClass;
     String dragClass;
@@ -17,27 +17,27 @@ public class Scrollbar {
         this.el = el;
     }
 
-    public boolean isHide() {
+    public Boolean isHide() {
         return hide;
     }
 
-    public void setHide(boolean hide) {
+    public void setHide(Boolean hide) {
         this.hide = hide;
     }
 
-    public boolean isDraggable() {
+    public Boolean isDraggable() {
         return draggable;
     }
 
-    public void setDraggable(boolean draggable) {
+    public void setDraggable(Boolean draggable) {
         this.draggable = draggable;
     }
 
-    public boolean isSnapOnRelease() {
+    public Boolean isSnapOnRelease() {
         return snapOnRelease;
     }
 
-    public void setSnapOnRelease(boolean snapOnRelease) {
+    public void setSnapOnRelease(Boolean snapOnRelease) {
         this.snapOnRelease = snapOnRelease;
     }
 

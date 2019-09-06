@@ -1,7 +1,7 @@
 package com.github.appreciated.config;
 
 public class Accessibility {
-    boolean enabled;
+    Boolean enabled;
     String prevSlideMessage;
     String nextSlideMessage;
     String firstSlideMessage;
@@ -9,11 +9,11 @@ public class Accessibility {
     String paginationBulletMessage;
     String notificationClass;
 
-    public boolean isEnabled() {
+    public Boolean isEnabled() {
         return enabled;
     }
 
-    public void setEnabled(boolean enabled) {
+    public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
 

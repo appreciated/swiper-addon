@@ -2,49 +2,49 @@ package com.github.appreciated.config;
 
 public class Autoplay {
 
-    double delay;
-    boolean stopOnLastSlide;
-    boolean disableOnInteraction;
-    boolean reverseDirection;
-    boolean waitForTransition;
+    Double delay;
+    Boolean stopOnLastSlide;
+    Boolean disableOnInteraction;
+    Boolean reverseDirection;
+    Boolean waitForTransition;
 
-    public double getDelay() {
+    public Double getDelay() {
         return delay;
     }
 
-    public void setDelay(double delay) {
+    public void setDelay(Double delay) {
         this.delay = delay;
     }
 
-    public boolean isStopOnLastSlide() {
+    public Boolean isStopOnLastSlide() {
         return stopOnLastSlide;
     }
 
-    public void setStopOnLastSlide(boolean stopOnLastSlide) {
+    public void setStopOnLastSlide(Boolean stopOnLastSlide) {
         this.stopOnLastSlide = stopOnLastSlide;
     }
 
-    public boolean isDisableOnInteraction() {
+    public Boolean isDisableOnInteraction() {
         return disableOnInteraction;
     }
 
-    public void setDisableOnInteraction(boolean disableOnInteraction) {
+    public void setDisableOnInteraction(Boolean disableOnInteraction) {
         this.disableOnInteraction = disableOnInteraction;
     }
 
-    public boolean isReverseDirection() {
+    public Boolean isReverseDirection() {
         return reverseDirection;
     }
 
-    public void setReverseDirection(boolean reverseDirection) {
+    public void setReverseDirection(Boolean reverseDirection) {
         this.reverseDirection = reverseDirection;
     }
 
-    public boolean isWaitForTransition() {
+    public Boolean isWaitForTransition() {
         return waitForTransition;
     }
 
-    public void setWaitForTransition(boolean waitForTransition) {
+    public void setWaitForTransition(Boolean waitForTransition) {
         this.waitForTransition = waitForTransition;
     }
 }

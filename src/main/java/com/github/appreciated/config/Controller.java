@@ -5,7 +5,7 @@ import com.github.appreciated.Swiper;
 public class Controller {
 
     Swiper control;
-    boolean inverse;
+    Boolean inverse;
     String by;
 
     public Swiper getControl() {
@@ -16,11 +16,11 @@ public class Controller {
         this.control = control;
     }
 
-    public boolean isInverse() {
+    public Boolean isInverse() {
         return inverse;
     }
 
-    public void setInverse(boolean inverse) {
+    public void setInverse(Boolean inverse) {
         this.inverse = inverse;
     }
 

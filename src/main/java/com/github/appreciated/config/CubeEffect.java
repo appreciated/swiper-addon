@@ -1,40 +1,40 @@
 package com.github.appreciated.config;
 
 public class CubeEffect {
-    boolean slideShadows;
-    boolean shadow;
-    double shadowOffset;
-    double shadowScale;
+    Boolean slideShadows;
+    Boolean shadow;
+    Double shadowOffset;
+    Double shadowScale;
 
-    public boolean isSlideShadows() {
+    public Boolean isSlideShadows() {
         return slideShadows;
     }
 
-    public void setSlideShadows(boolean slideShadows) {
+    public void setSlideShadows(Boolean slideShadows) {
         this.slideShadows = slideShadows;
     }
 
-    public boolean isShadow() {
+    public Boolean isShadow() {
         return shadow;
     }
 
-    public void setShadow(boolean shadow) {
+    public void setShadow(Boolean shadow) {
         this.shadow = shadow;
     }
 
-    public double getShadowOffset() {
+    public Double getShadowOffset() {
         return shadowOffset;
     }
 
-    public void setShadowOffset(double shadowOffset) {
+    public void setShadowOffset(Double shadowOffset) {
         this.shadowOffset = shadowOffset;
     }
 
-    public double getShadowScale() {
+    public Double getShadowScale() {
         return shadowScale;
     }
 
-    public void setShadowScale(double shadowScale) {
+    public void setShadowScale(Double shadowScale) {
         this.shadowScale = shadowScale;
     }
 }

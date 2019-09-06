@@ -3,7 +3,7 @@ package com.github.appreciated.config;
 public class Navigation {
     String nextEl;
     String prevEl;
-    boolean hideOnClick;
+    Boolean hideOnClick;
     String disabledClass;
     String hiddenClass;
 
@@ -23,11 +23,11 @@ public class Navigation {
         this.prevEl = prevEl;
     }
 
-    public boolean isHideOnClick() {
+    public Boolean isHideOnClick() {
         return hideOnClick;
     }
 
-    public void setHideOnClick(boolean hideOnClick) {
+    public void setHideOnClick(Boolean hideOnClick) {
         this.hideOnClick = hideOnClick;
     }
 

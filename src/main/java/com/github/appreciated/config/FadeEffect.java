@@ -1,13 +1,13 @@
 package com.github.appreciated.config;
 
 public class FadeEffect {
-    boolean crossFade;
+    Boolean crossFade;
 
-    public boolean isCrossFade() {
+    public Boolean isCrossFade() {
         return crossFade;
     }
 
-    public void setCrossFade(boolean crossFade) {
+    public void setCrossFade(Boolean crossFade) {
         this.crossFade = crossFade;
     }
 }

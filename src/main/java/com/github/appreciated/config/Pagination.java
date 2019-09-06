@@ -4,11 +4,11 @@ public class Pagination {
     String el;
     String type;
     String bulletElement;
-    boolean dynamicBullets;
-    double dynamicMainBullets;
-    boolean hideOnClick;
-    boolean clickable;
-    boolean progressbarOpposite;
+    Boolean dynamicBullets;
+    Double dynamicMainBullets;
+    Boolean hideOnClick;
+    Boolean clickable;
+    Boolean progressbarOpposite;
     String bulletClass;
     String bulletActiveClass;
     String modifierClass;
@@ -20,8 +20,8 @@ public class Pagination {
     String lockClass;
 
     /**
-     * function(double)   formatFractionCurrent;
-     * function(double)   formatFractionTotal  ;
+     * function(Double)   formatFractionCurrent;
+     * function(Double)   formatFractionTotal  ;
      * function(index, className)   renderBullet         ;
      * function(currentClass, totalClass)   renderFraction       ;
      * function(progressbarFillClass)   renderProgressbar    ;
@@ -52,43 +52,43 @@ public class Pagination {
         this.bulletElement = bulletElement;
     }
 
-    public boolean isDynamicBullets() {
+    public Boolean isDynamicBullets() {
         return dynamicBullets;
     }
 
-    public void setDynamicBullets(boolean dynamicBullets) {
+    public void setDynamicBullets(Boolean dynamicBullets) {
         this.dynamicBullets = dynamicBullets;
     }
 
-    public double getDynamicMainBullets() {
+    public Double getDynamicMainBullets() {
         return dynamicMainBullets;
     }
 
-    public void setDynamicMainBullets(double dynamicMainBullets) {
+    public void setDynamicMainBullets(Double dynamicMainBullets) {
         this.dynamicMainBullets = dynamicMainBullets;
     }
 
-    public boolean isHideOnClick() {
+    public Boolean isHideOnClick() {
         return hideOnClick;
     }
 
-    public void setHideOnClick(boolean hideOnClick) {
+    public void setHideOnClick(Boolean hideOnClick) {
         this.hideOnClick = hideOnClick;
     }
 
-    public boolean isClickable() {
+    public Boolean isClickable() {
         return clickable;
     }
 
-    public void setClickable(boolean clickable) {
+    public void setClickable(Boolean clickable) {
         this.clickable = clickable;
     }
 
-    public boolean isProgressbarOpposite() {
+    public Boolean isProgressbarOpposite() {
         return progressbarOpposite;
     }
 
-    public void setProgressbarOpposite(boolean progressbarOpposite) {
+    public void setProgressbarOpposite(Boolean progressbarOpposite) {
         this.progressbarOpposite = progressbarOpposite;
     }
 

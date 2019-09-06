@@ -1,33 +1,33 @@
 package com.github.appreciated.config;
 
 public class Zoom {
-    double maxRatio;
-    double minRatio;
-    boolean toggle;
+    Double maxRatio;
+    Double minRatio;
+    Boolean toggle;
     String containerClass;
     String zoomedSlideClass;
 
-    public double getMaxRatio() {
+    public Double getMaxRatio() {
         return maxRatio;
     }
 
-    public void setMaxRatio(double maxRatio) {
+    public void setMaxRatio(Double maxRatio) {
         this.maxRatio = maxRatio;
     }
 
-    public double getMinRatio() {
+    public Double getMinRatio() {
         return minRatio;
     }
 
-    public void setMinRatio(double minRatio) {
+    public void setMinRatio(Double minRatio) {
         this.minRatio = minRatio;
     }
 
-    public boolean isToggle() {
+    public Boolean isToggle() {
         return toggle;
     }
 
-    public void setToggle(boolean toggle) {
+    public void setToggle(Boolean toggle) {
         this.toggle = toggle;
     }
 
