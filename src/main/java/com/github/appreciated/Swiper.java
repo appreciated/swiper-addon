@@ -9,6 +9,7 @@ import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.JavaScript;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.html.Div;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 
 import java.util.Arrays;
 
@@ -74,10 +75,13 @@ public class Swiper extends Div implements HasComponents, HasSize, HasStyle {
     @Override
     public void add(Component... components) {
         Arrays.stream(components).forEach(component -> {
-            Div slideWrapper = new Div(component);
-            slideWrapper.getStyle()
-                    .set("align-items", "center")
-                    .set("display", "flex");
+            HorizontalLayout slideWrapper = new HorizontalLayout(component);
+            if (config.getJustifyContentMode() != null) {
+                slideWrapper.setJustifyContentMode(config.getJustifyContentMode());
+            }
+            if (config.getAlignment() != null) {
+                slideWrapper.setAlignItems(config.getAlignment());
+            }
             slideWrapper.addClassName("swiper-slide");
             if (config.getSlidesPerView() != null && config.getSlidesPerView().equals("auto")) {
                 if (config.getDirection() == Direction.HORIZONTAL) {

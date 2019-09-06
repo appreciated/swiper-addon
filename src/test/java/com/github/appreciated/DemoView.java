@@ -35,6 +35,8 @@ public class DemoView extends VerticalLayout {
     private void addHorizontal() {
         Swiper sw = new Swiper(SwiperConfigBuilder.get()
                 .withDirection(Direction.HORIZONTAL)
+                .withAlignment(Alignment.CENTER)
+                .withJustifyContentMode(JustifyContentMode.CENTER)
                 .withAllowSlidePrev(true)
                 .withAllowSlideNext(true)
                 .build()
@@ -48,6 +50,8 @@ public class DemoView extends VerticalLayout {
     private void addHorizontalWithPagination() {
         Swiper sw = new Swiper(SwiperConfigBuilder.get()
                 .withDirection(Direction.HORIZONTAL)
+                .withAlignment(Alignment.CENTER)
+                .withJustifyContentMode(JustifyContentMode.CENTER)
                 .withPagination(PaginationBuilder.get().withEl(".swiper-pagination").build())
                 .build()
         );
@@ -60,6 +64,8 @@ public class DemoView extends VerticalLayout {
     private void addHorizontalMulti() {
         Swiper sw = new Swiper(SwiperConfigBuilder.get()
                 .withDirection(Direction.HORIZONTAL)
+                .withAlignment(Alignment.CENTER)
+                .withJustifyContentMode(JustifyContentMode.CENTER)
                 .withSlidesPerView("auto")
                 .withSpaceBetween(30.0)
                 .build()
@@ -73,6 +79,8 @@ public class DemoView extends VerticalLayout {
     private void addHorizontalMultiCentered() {
         Swiper sw = new Swiper(SwiperConfigBuilder.get()
                 .withDirection(Direction.HORIZONTAL)
+                .withAlignment(Alignment.CENTER)
+                .withJustifyContentMode(JustifyContentMode.CENTER)
                 .withSlidesPerView("auto")
                 .withCenteredSlides(true)
                 .withSpaceBetween(30.0)
@@ -87,7 +95,8 @@ public class DemoView extends VerticalLayout {
     private void addVertical() {
         Swiper sw = new Swiper(SwiperConfigBuilder.get()
                 .withDirection(Direction.VERTICAL)
-                .withLoop(true)
+                .withAlignment(Alignment.CENTER)
+                .withJustifyContentMode(JustifyContentMode.CENTER)
                 .build()
         );
         sw.setHeight("300px");

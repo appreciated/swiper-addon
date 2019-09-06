@@ -1,6 +1,7 @@
 package com.github.appreciated;
 
 import com.github.appreciated.config.*;
+import com.vaadin.flow.component.orderedlayout.FlexComponent;
 
 public class SwiperConfig {
 
@@ -110,6 +111,8 @@ public class SwiperConfig {
     private String slideDuplicatePrevClass;
     private String wrapperClass;
     private Accessibility accessibility;
+    private FlexComponent.Alignment alignment;
+    private FlexComponent.JustifyContentMode justifyContentMode;
 
     public SwiperConfig() {
     }
@@ -1160,5 +1163,21 @@ public class SwiperConfig {
 
     public void setAccessibility(Accessibility accessibility) {
         this.accessibility = accessibility;
+    }
+
+    public void setAlignment(FlexComponent.Alignment alignment) {
+        this.alignment = alignment;
+    }
+
+    public void setJustifyContentMode(FlexComponent.JustifyContentMode justifyContentMode) {
+        this.justifyContentMode = justifyContentMode;
+    }
+
+    public FlexComponent.Alignment getAlignment() {
+        return alignment;
+    }
+
+    public FlexComponent.JustifyContentMode getJustifyContentMode() {
+        return justifyContentMode;
     }
 }

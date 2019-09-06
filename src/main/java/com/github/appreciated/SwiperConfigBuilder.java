@@ -1,6 +1,7 @@
 package com.github.appreciated;
 
 import com.github.appreciated.config.*;
+import com.vaadin.flow.component.orderedlayout.FlexComponent;
 
 public class SwiperConfigBuilder {
     private Autoplay autoplay;
@@ -109,6 +110,9 @@ public class SwiperConfigBuilder {
     private String slideDuplicatePrevClass;
     private String wrapperClass;
     private Accessibility accessibility;
+    private FlexComponent.Alignment center;
+    private FlexComponent.JustifyContentMode justifyContentMode;
+    private FlexComponent.Alignment alignment;
 
     private SwiperConfigBuilder() {
     }
@@ -766,6 +770,18 @@ public class SwiperConfigBuilder {
         swiperConfig.setSlideDuplicatePrevClass(slideDuplicatePrevClass);
         swiperConfig.setWrapperClass(wrapperClass);
         swiperConfig.setAccessibility(accessibility);
+        swiperConfig.setAlignment(alignment);
+        swiperConfig.setJustifyContentMode(justifyContentMode);
         return swiperConfig;
+    }
+
+    public SwiperConfigBuilder withAlignment(FlexComponent.Alignment alignment) {
+        this.alignment = alignment;
+        return this;
+    }
+
+    public SwiperConfigBuilder withJustifyContentMode(FlexComponent.JustifyContentMode justifyContentMode) {
+        this.justifyContentMode = justifyContentMode;
+        return this;
     }
 }
