@@ -3,10 +3,8 @@ package com.github.appreciated;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.vaadin.flow.component.AttachEvent;
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.HasComponents;
-import com.vaadin.flow.component.HasSize;
+import com.github.appreciated.config.Direction;
+import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.JavaScript;
 import com.vaadin.flow.component.dependency.NpmPackage;
@@ -15,9 +13,9 @@ import com.vaadin.flow.component.html.Div;
 import java.util.Arrays;
 
 @NpmPackage(value = "swiper", version = "^4.5.0")
-@CssImport("swiper/dist/css/swiper.min.css")
+@CssImport("./com/github/appreciated/swiper/swiper-styles.css")
 @JavaScript(value = "./com/github/appreciated/swiper/swiper-interace.js")
-public class Swiper extends Div implements HasComponents, HasSize {
+public class Swiper extends Div implements HasComponents, HasSize, HasStyle {
 
     Div wrapper = new Div();
     Div pagination = new Div();
@@ -77,8 +75,19 @@ public class Swiper extends Div implements HasComponents, HasSize {
     public void add(Component... components) {
         Arrays.stream(components).forEach(component -> {
             Div slideWrapper = new Div(component);
+            slideWrapper.getStyle()
+                    .set("align-items", "center")
+                    .set("display", "flex");
             slideWrapper.addClassName("swiper-slide");
-            slideWrapper.setSizeFull();
+            if (config.getSlidesPerView() != null && config.getSlidesPerView().equals("auto")) {
+                if (config.getDirection() == Direction.HORIZONTAL) {
+                    slideWrapper.setHeightFull();
+                } else {
+                    slideWrapper.setWidthFull();
+                }
+            } else {
+                slideWrapper.setSizeFull();
+            }
             wrapper.add(slideWrapper);
         });
     }

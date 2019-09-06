@@ -287,6 +287,11 @@ public class SwiperConfigBuilder {
         return this;
     }
 
+    public SwiperConfigBuilder withSlidesPerView(int slidesPerView) {
+        this.slidesPerView = String.valueOf(slidesPerView);
+        return this;
+    }
+
     public SwiperConfigBuilder withSlidesPerColumn(Double slidesPerColumn) {
         this.slidesPerColumn = slidesPerColumn;
         return this;
