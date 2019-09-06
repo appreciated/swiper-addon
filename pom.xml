@@ -3,7 +3,7 @@
 
     <groupId>com.github.appreciated</groupId>
     <artifactId>swiper-flow</artifactId>
-    <version>2.0.0.beta1</version>
+    <version>2.0.0.alpha1</version>
     <name>swiper-flow</name>
     <description>Integration of swiper for Vaadin platform 14</description>
 
