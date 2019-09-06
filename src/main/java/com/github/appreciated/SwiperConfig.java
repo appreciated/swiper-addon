@@ -1,9 +1,26 @@
 package com.github.appreciated;
 
-import com.github.appreciated.config.Direction;
+import com.github.appreciated.config.*;
 
 public class SwiperConfig {
 
+    private Autoplay autoplay;
+    private Controller controller;
+    private CoverflowEffect coverflowEffect;
+    private CubeEffect cubeEffect;
+    private FadeEffect fadeEffect;
+    private FlipEffect flipEffect;
+    private HashNavigation hashNavigation;
+    private HistoryNavigation historyNavigation;
+    private KeyboardControl keyboardControl;
+    private LazyLoading lazyLoading;
+    private MousewheelControl mousewheelControl;
+    private Navigation navigation;
+    private Pagination pagination;
+    private Parallax parallax;
+    private Scrollbar scrollbar;
+    private Thumbs thumbs;
+    private Zoom zoom;
     private Boolean init;
     private Double initialSlide;
     private Direction direction;
@@ -21,7 +38,7 @@ public class SwiperConfig {
     private Boolean watchOverflow;
     private Object on;
     private Double spaceBetween;
-    private Double slidesPerView; //TODO number or 'auto'
+    private String slidesPerView;
     private Double slidesPerColumn;
     private String slidesPerColumnFill;
     private Double slidesPerGroup;
@@ -93,6 +110,7 @@ public class SwiperConfig {
     private String slidePrevClass;
     private String slideDuplicatePrevClass;
     private String wrapperClass;
+    private Accessibility accessibility;
 
     public SwiperConfig() {
     }
@@ -183,10 +201,6 @@ public class SwiperConfig {
 
     public Boolean isiOSEdgeSwipeDetection() {
         return iOSEdgeSwipeDetection;
-    }
-
-    public void setiOSEdgeSwipeDetection(Boolean iOSEdgeSwipeDetection) {
-        this.iOSEdgeSwipeDetection = iOSEdgeSwipeDetection;
     }
 
     public Double getiOSEdgeSwipeThreshold() {
@@ -293,6 +307,82 @@ public class SwiperConfig {
         return observeSlideChildren;
     }
 
+    public Boolean getiOSEdgeSwipeDetection() {
+        return iOSEdgeSwipeDetection;
+    }
+
+    public void setiOSEdgeSwipeDetection(Boolean iOSEdgeSwipeDetection) {
+        this.iOSEdgeSwipeDetection = iOSEdgeSwipeDetection;
+    }
+
+
+    public Autoplay getAutoplay() {
+        return autoplay;
+    }
+
+    public Controller getController() {
+        return controller;
+    }
+
+    public CoverflowEffect getCoverflowEffect() {
+        return coverflowEffect;
+    }
+
+    public CubeEffect getCubeEffect() {
+        return cubeEffect;
+    }
+
+    public FadeEffect getFadeEffect() {
+        return fadeEffect;
+    }
+
+    public FlipEffect getFlipEffect() {
+        return flipEffect;
+    }
+
+    public HashNavigation getHashNavigation() {
+        return hashNavigation;
+    }
+
+    public HistoryNavigation getHistoryNavigation() {
+        return historyNavigation;
+    }
+
+    public KeyboardControl getKeyboardControl() {
+        return keyboardControl;
+    }
+
+    public LazyLoading getLazyLoading() {
+        return lazyLoading;
+    }
+
+    public MousewheelControl getMousewheelControl() {
+        return mousewheelControl;
+    }
+
+    public Navigation getNavigation() {
+        return navigation;
+    }
+
+    public Pagination getPagination() {
+        return pagination;
+    }
+
+    public Parallax getParallax() {
+        return parallax;
+    }
+
+    public Scrollbar getScrollbar() {
+        return scrollbar;
+    }
+
+    public Thumbs getThumbs() {
+        return thumbs;
+    }
+
+    public Zoom getZoom() {
+        return zoom;
+    }
 
     public Boolean getInit() {
         return init;
@@ -362,7 +452,7 @@ public class SwiperConfig {
         return spaceBetween;
     }
 
-    public Double getSlidesPerView() {
+    public String getSlidesPerView() {
         return slidesPerView;
     }
 
@@ -650,6 +740,78 @@ public class SwiperConfig {
         return wrapperClass;
     }
 
+    public Accessibility getAccessibility() {
+        return accessibility;
+    }
+
+    public void setAutoplay(Autoplay autoplay) {
+        this.autoplay = autoplay;
+    }
+
+    public void setController(Controller controller) {
+        this.controller = controller;
+    }
+
+    public void setCoverflowEffect(CoverflowEffect coverflowEffect) {
+        this.coverflowEffect = coverflowEffect;
+    }
+
+    public void setCubeEffect(CubeEffect cubeEffect) {
+        this.cubeEffect = cubeEffect;
+    }
+
+    public void setFadeEffect(FadeEffect fadeEffect) {
+        this.fadeEffect = fadeEffect;
+    }
+
+    public void setFlipEffect(FlipEffect flipEffect) {
+        this.flipEffect = flipEffect;
+    }
+
+    public void setHashNavigation(HashNavigation hashNavigation) {
+        this.hashNavigation = hashNavigation;
+    }
+
+    public void setHistoryNavigation(HistoryNavigation historyNavigation) {
+        this.historyNavigation = historyNavigation;
+    }
+
+    public void setKeyboardControl(KeyboardControl keyboardControl) {
+        this.keyboardControl = keyboardControl;
+    }
+
+    public void setLazyLoading(LazyLoading lazyLoading) {
+        this.lazyLoading = lazyLoading;
+    }
+
+    public void setMousewheelControl(MousewheelControl mousewheelControl) {
+        this.mousewheelControl = mousewheelControl;
+    }
+
+    public void setNavigation(Navigation navigation) {
+        this.navigation = navigation;
+    }
+
+    public void setPagination(Pagination pagination) {
+        this.pagination = pagination;
+    }
+
+    public void setParallax(Parallax parallax) {
+        this.parallax = parallax;
+    }
+
+    public void setScrollbar(Scrollbar scrollbar) {
+        this.scrollbar = scrollbar;
+    }
+
+    public void setThumbs(Thumbs thumbs) {
+        this.thumbs = thumbs;
+    }
+
+    public void setZoom(Zoom zoom) {
+        this.zoom = zoom;
+    }
+
     public void setInit(Boolean init) {
         this.init = init;
     }
@@ -718,7 +880,7 @@ public class SwiperConfig {
         this.spaceBetween = spaceBetween;
     }
 
-    public void setSlidesPerView(Double slidesPerView) {
+    public void setSlidesPerView(String slidesPerView) {
         this.slidesPerView = slidesPerView;
     }
 
@@ -1004,5 +1166,9 @@ public class SwiperConfig {
 
     public void setWrapperClass(String wrapperClass) {
         this.wrapperClass = wrapperClass;
+    }
+
+    public void setAccessibility(Accessibility accessibility) {
+        this.accessibility = accessibility;
     }
 }

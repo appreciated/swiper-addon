@@ -32,13 +32,29 @@ public class Swiper extends Div implements HasComponents, HasSize {
         pagination.addClassName("swiper-pagination");
         buttonPrev.addClassName("swiper-button-prev");
         buttonNext.addClassName("swiper-button-next");
-        super.add(wrapper, pagination, buttonPrev, buttonNext);
+        super.add(wrapper);
         setConfig(config);
         setSizeFull();
     }
 
     private void setConfig(SwiperConfig config) {
         this.config = config;
+    }
+
+    public Swiper withNextButton() {
+        super.add(buttonNext);
+        return this;
+    }
+
+    public Swiper withPreviousButton() {
+        super.add(buttonPrev);
+        return this;
+    }
+
+
+    public Swiper withPagination() {
+        super.add(pagination);
+        return this;
     }
 
     @Override

@@ -1,8 +1,25 @@
 package com.github.appreciated;
 
-import com.github.appreciated.config.Direction;
+import com.github.appreciated.config.*;
 
 public class SwiperConfigBuilder {
+    private Autoplay autoplay;
+    private Controller controller;
+    private CoverflowEffect coverflowEffect;
+    private CubeEffect cubeEffect;
+    private FadeEffect fadeEffect;
+    private FlipEffect flipEffect;
+    private HashNavigation hashNavigation;
+    private HistoryNavigation historyNavigation;
+    private KeyboardControl keyboardControl;
+    private LazyLoading lazyLoading;
+    private MousewheelControl mousewheelControl;
+    private Navigation navigation;
+    private Pagination pagination;
+    private Parallax parallax;
+    private Scrollbar scrollbar;
+    private Thumbs thumbs;
+    private Zoom zoom;
     private Boolean init;
     private Double initialSlide;
     private Direction direction;
@@ -20,7 +37,7 @@ public class SwiperConfigBuilder {
     private Boolean watchOverflow;
     private Object on;
     private Double spaceBetween;
-    private Double slidesPerView;
+    private String slidesPerView;
     private Double slidesPerColumn;
     private String slidesPerColumnFill;
     private Double slidesPerGroup;
@@ -92,12 +109,98 @@ public class SwiperConfigBuilder {
     private String slidePrevClass;
     private String slideDuplicatePrevClass;
     private String wrapperClass;
+    private Accessibility accessibility;
 
     private SwiperConfigBuilder() {
     }
 
-    public static SwiperConfigBuilder get() {
+    public static SwiperConfigBuilder aSwiperConfig() {
         return new SwiperConfigBuilder();
+    }
+
+    public SwiperConfigBuilder withAutoplay(Autoplay autoplay) {
+        this.autoplay = autoplay;
+        return this;
+    }
+
+    public SwiperConfigBuilder withController(Controller controller) {
+        this.controller = controller;
+        return this;
+    }
+
+    public SwiperConfigBuilder withCoverflowEffect(CoverflowEffect coverflowEffect) {
+        this.coverflowEffect = coverflowEffect;
+        return this;
+    }
+
+    public SwiperConfigBuilder withCubeEffect(CubeEffect cubeEffect) {
+        this.cubeEffect = cubeEffect;
+        return this;
+    }
+
+    public SwiperConfigBuilder withFadeEffect(FadeEffect fadeEffect) {
+        this.fadeEffect = fadeEffect;
+        return this;
+    }
+
+    public SwiperConfigBuilder withFlipEffect(FlipEffect flipEffect) {
+        this.flipEffect = flipEffect;
+        return this;
+    }
+
+    public SwiperConfigBuilder withHashNavigation(HashNavigation hashNavigation) {
+        this.hashNavigation = hashNavigation;
+        return this;
+    }
+
+    public SwiperConfigBuilder withHistoryNavigation(HistoryNavigation historyNavigation) {
+        this.historyNavigation = historyNavigation;
+        return this;
+    }
+
+    public SwiperConfigBuilder withKeyboardControl(KeyboardControl keyboardControl) {
+        this.keyboardControl = keyboardControl;
+        return this;
+    }
+
+    public SwiperConfigBuilder withLazyLoading(LazyLoading lazyLoading) {
+        this.lazyLoading = lazyLoading;
+        return this;
+    }
+
+    public SwiperConfigBuilder withMousewheelControl(MousewheelControl mousewheelControl) {
+        this.mousewheelControl = mousewheelControl;
+        return this;
+    }
+
+    public SwiperConfigBuilder withNavigation(Navigation navigation) {
+        this.navigation = navigation;
+        return this;
+    }
+
+    public SwiperConfigBuilder withPagination(Pagination pagination) {
+        this.pagination = pagination;
+        return this;
+    }
+
+    public SwiperConfigBuilder withParallax(Parallax parallax) {
+        this.parallax = parallax;
+        return this;
+    }
+
+    public SwiperConfigBuilder withScrollbar(Scrollbar scrollbar) {
+        this.scrollbar = scrollbar;
+        return this;
+    }
+
+    public SwiperConfigBuilder withThumbs(Thumbs thumbs) {
+        this.thumbs = thumbs;
+        return this;
+    }
+
+    public SwiperConfigBuilder withZoom(Zoom zoom) {
+        this.zoom = zoom;
+        return this;
     }
 
     public SwiperConfigBuilder withInit(Boolean init) {
@@ -185,7 +288,7 @@ public class SwiperConfigBuilder {
         return this;
     }
 
-    public SwiperConfigBuilder withSlidesPerView(Double slidesPerView) {
+    public SwiperConfigBuilder withSlidesPerView(String slidesPerView) {
         this.slidesPerView = slidesPerView;
         return this;
     }
@@ -545,97 +648,120 @@ public class SwiperConfigBuilder {
         return this;
     }
 
+    public SwiperConfigBuilder withAccessibility(Accessibility accessibility) {
+        this.accessibility = accessibility;
+        return this;
+    }
+
     public SwiperConfig build() {
-        SwiperConfig swiper = new SwiperConfig();
-        swiper.setInit(init);
-        swiper.setInitialSlide(initialSlide);
-        swiper.setDirection(direction);
-        swiper.setSpeed(speed);
-        swiper.setSetWrapperSize(setWrapperSize);
-        swiper.setVirtualTranslate(virtualTranslate);
-        swiper.setWidth(width);
-        swiper.setHeight(height);
-        swiper.setAutoHeight(autoHeight);
-        swiper.setRoundLengths(roundLengths);
-        swiper.setNested(nested);
-        swiper.setUniqueNavElements(uniqueNavElements);
-        swiper.setEffect(effect);
-        swiper.setRunCallbacksOnInit(runCallbacksOnInit);
-        swiper.setWatchOverflow(watchOverflow);
-        swiper.setOn(on);
-        swiper.setSpaceBetween(spaceBetween);
-        swiper.setSlidesPerView(slidesPerView);
-        swiper.setSlidesPerColumn(slidesPerColumn);
-        swiper.setSlidesPerColumnFill(slidesPerColumnFill);
-        swiper.setSlidesPerGroup(slidesPerGroup);
-        swiper.setCenteredSlides(centeredSlides);
-        swiper.setSlidesOffsetBefore(slidesOffsetBefore);
-        swiper.setSlidesOffsetAfter(slidesOffsetAfter);
-        swiper.setNormalizeSlideIndex(normalizeSlideIndex);
-        swiper.setCenterInsufficientSlides(centerInsufficientSlides);
-        swiper.setGrabCursor(grabCursor);
-        swiper.setTouchEventsTarget(touchEventsTarget);
-        swiper.setTouchRatio(touchRatio);
-        swiper.setTouchAngle(touchAngle);
-        swiper.setSimulateTouch(simulateTouch);
-        swiper.setShortSwipes(shortSwipes);
-        swiper.setLongSwipes(longSwipes);
-        swiper.setLongSwipesRatio(longSwipesRatio);
-        swiper.setLongSwipesMs(longSwipesMs);
-        swiper.setFollowFinger(followFinger);
-        swiper.setAllowTouchMove(allowTouchMove);
-        swiper.setThreshold(threshold);
-        swiper.setTouchStartPreventDefault(touchStartPreventDefault);
-        swiper.setTouchStartForcePreventDefault(touchStartForcePreventDefault);
-        swiper.setTouchMoveStopPropagation(touchMoveStopPropagation);
-        swiper.setIOSEdgeSwipeDetection(iOSEdgeSwipeDetection);
-        swiper.setIOSEdgeSwipeThreshold(iOSEdgeSwipeThreshold);
-        swiper.setTouchReleaseOnEdges(touchReleaseOnEdges);
-        swiper.setPassiveListeners(passiveListeners);
-        swiper.setResistance(resistance);
-        swiper.setResistanceRatio(resistanceRatio);
-        swiper.setPreventInteractionOnTransition(preventInteractionOnTransition);
-        swiper.setAllowSlidePrev(allowSlidePrev);
-        swiper.setAllowSlideNext(allowSlideNext);
-        swiper.setNoSwiping(noSwiping);
-        swiper.setNoSwipingClass(noSwipingClass);
-        swiper.setNoSwipingSelector(noSwipingSelector);
-        swiper.setSwipeHandler(swipeHandler);
-        swiper.setPreventClicks(preventClicks);
-        swiper.setPreventClicksPropagation(preventClicksPropagation);
-        swiper.setSlideToClickedSlide(slideToClickedSlide);
-        swiper.setFreeMode(freeMode);
-        swiper.setFreeModeMomentum(freeModeMomentum);
-        swiper.setFreeModeMomentumRatio(freeModeMomentumRatio);
-        swiper.setFreeModeMomentumVelocityRatio(freeModeMomentumVelocityRatio);
-        swiper.setFreeModeMomentumBounce(freeModeMomentumBounce);
-        swiper.setFreeModeMomentumBounceRatio(freeModeMomentumBounceRatio);
-        swiper.setFreeModeMinimumVelocity(freeModeMinimumVelocity);
-        swiper.setFreeModeSticky(freeModeSticky);
-        swiper.setWatchSlidesProgress(watchSlidesProgress);
-        swiper.setWatchSlidesVisibility(watchSlidesVisibility);
-        swiper.setPreloadImages(preloadImages);
-        swiper.setUpdateOnImagesReady(updateOnImagesReady);
-        swiper.setLoop(loop);
-        swiper.setLoopAdditionalSlides(loopAdditionalSlides);
-        swiper.setLoopedSlides(loopedSlides);
-        swiper.setLoopFillGroupWithBlank(loopFillGroupWithBlank);
-        swiper.setBreakpoints(breakpoints);
-        swiper.setBreakpointsInverse(breakpointsInverse);
-        swiper.setObserver(observer);
-        swiper.setObserveParents(observeParents);
-        swiper.setObserveSlideChildren(observeSlideChildren);
-        swiper.setContainerModifierClass(containerModifierClass);
-        swiper.setSlideClass(slideClass);
-        swiper.setSlideActiveClass(slideActiveClass);
-        swiper.setSlideDuplicateActiveClass(slideDuplicateActiveClass);
-        swiper.setSlideVisibleClass(slideVisibleClass);
-        swiper.setSlideDuplicateClass(slideDuplicateClass);
-        swiper.setSlideNextClass(slideNextClass);
-        swiper.setSlideDuplicateNextClass(slideDuplicateNextClass);
-        swiper.setSlidePrevClass(slidePrevClass);
-        swiper.setSlideDuplicatePrevClass(slideDuplicatePrevClass);
-        swiper.setWrapperClass(wrapperClass);
-        return swiper;
+        SwiperConfig swiperConfig = new SwiperConfig();
+        swiperConfig.setAutoplay(autoplay);
+        swiperConfig.setController(controller);
+        swiperConfig.setCoverflowEffect(coverflowEffect);
+        swiperConfig.setCubeEffect(cubeEffect);
+        swiperConfig.setFadeEffect(fadeEffect);
+        swiperConfig.setFlipEffect(flipEffect);
+        swiperConfig.setHashNavigation(hashNavigation);
+        swiperConfig.setHistoryNavigation(historyNavigation);
+        swiperConfig.setKeyboardControl(keyboardControl);
+        swiperConfig.setLazyLoading(lazyLoading);
+        swiperConfig.setMousewheelControl(mousewheelControl);
+        swiperConfig.setNavigation(navigation);
+        swiperConfig.setPagination(pagination);
+        swiperConfig.setParallax(parallax);
+        swiperConfig.setScrollbar(scrollbar);
+        swiperConfig.setThumbs(thumbs);
+        swiperConfig.setZoom(zoom);
+        swiperConfig.setInit(init);
+        swiperConfig.setInitialSlide(initialSlide);
+        swiperConfig.setDirection(direction);
+        swiperConfig.setSpeed(speed);
+        swiperConfig.setSetWrapperSize(setWrapperSize);
+        swiperConfig.setVirtualTranslate(virtualTranslate);
+        swiperConfig.setWidth(width);
+        swiperConfig.setHeight(height);
+        swiperConfig.setAutoHeight(autoHeight);
+        swiperConfig.setRoundLengths(roundLengths);
+        swiperConfig.setNested(nested);
+        swiperConfig.setUniqueNavElements(uniqueNavElements);
+        swiperConfig.setEffect(effect);
+        swiperConfig.setRunCallbacksOnInit(runCallbacksOnInit);
+        swiperConfig.setWatchOverflow(watchOverflow);
+        swiperConfig.setOn(on);
+        swiperConfig.setSpaceBetween(spaceBetween);
+        swiperConfig.setSlidesPerView(slidesPerView);
+        swiperConfig.setSlidesPerColumn(slidesPerColumn);
+        swiperConfig.setSlidesPerColumnFill(slidesPerColumnFill);
+        swiperConfig.setSlidesPerGroup(slidesPerGroup);
+        swiperConfig.setCenteredSlides(centeredSlides);
+        swiperConfig.setSlidesOffsetBefore(slidesOffsetBefore);
+        swiperConfig.setSlidesOffsetAfter(slidesOffsetAfter);
+        swiperConfig.setNormalizeSlideIndex(normalizeSlideIndex);
+        swiperConfig.setCenterInsufficientSlides(centerInsufficientSlides);
+        swiperConfig.setGrabCursor(grabCursor);
+        swiperConfig.setTouchEventsTarget(touchEventsTarget);
+        swiperConfig.setTouchRatio(touchRatio);
+        swiperConfig.setTouchAngle(touchAngle);
+        swiperConfig.setSimulateTouch(simulateTouch);
+        swiperConfig.setShortSwipes(shortSwipes);
+        swiperConfig.setLongSwipes(longSwipes);
+        swiperConfig.setLongSwipesRatio(longSwipesRatio);
+        swiperConfig.setLongSwipesMs(longSwipesMs);
+        swiperConfig.setFollowFinger(followFinger);
+        swiperConfig.setAllowTouchMove(allowTouchMove);
+        swiperConfig.setThreshold(threshold);
+        swiperConfig.setTouchStartPreventDefault(touchStartPreventDefault);
+        swiperConfig.setTouchStartForcePreventDefault(touchStartForcePreventDefault);
+        swiperConfig.setTouchMoveStopPropagation(touchMoveStopPropagation);
+        swiperConfig.setIOSEdgeSwipeDetection(iOSEdgeSwipeDetection);
+        swiperConfig.setIOSEdgeSwipeThreshold(iOSEdgeSwipeThreshold);
+        swiperConfig.setTouchReleaseOnEdges(touchReleaseOnEdges);
+        swiperConfig.setPassiveListeners(passiveListeners);
+        swiperConfig.setResistance(resistance);
+        swiperConfig.setResistanceRatio(resistanceRatio);
+        swiperConfig.setPreventInteractionOnTransition(preventInteractionOnTransition);
+        swiperConfig.setAllowSlidePrev(allowSlidePrev);
+        swiperConfig.setAllowSlideNext(allowSlideNext);
+        swiperConfig.setNoSwiping(noSwiping);
+        swiperConfig.setNoSwipingClass(noSwipingClass);
+        swiperConfig.setNoSwipingSelector(noSwipingSelector);
+        swiperConfig.setSwipeHandler(swipeHandler);
+        swiperConfig.setPreventClicks(preventClicks);
+        swiperConfig.setPreventClicksPropagation(preventClicksPropagation);
+        swiperConfig.setSlideToClickedSlide(slideToClickedSlide);
+        swiperConfig.setFreeMode(freeMode);
+        swiperConfig.setFreeModeMomentum(freeModeMomentum);
+        swiperConfig.setFreeModeMomentumRatio(freeModeMomentumRatio);
+        swiperConfig.setFreeModeMomentumVelocityRatio(freeModeMomentumVelocityRatio);
+        swiperConfig.setFreeModeMomentumBounce(freeModeMomentumBounce);
+        swiperConfig.setFreeModeMomentumBounceRatio(freeModeMomentumBounceRatio);
+        swiperConfig.setFreeModeMinimumVelocity(freeModeMinimumVelocity);
+        swiperConfig.setFreeModeSticky(freeModeSticky);
+        swiperConfig.setWatchSlidesProgress(watchSlidesProgress);
+        swiperConfig.setWatchSlidesVisibility(watchSlidesVisibility);
+        swiperConfig.setPreloadImages(preloadImages);
+        swiperConfig.setUpdateOnImagesReady(updateOnImagesReady);
+        swiperConfig.setLoop(loop);
+        swiperConfig.setLoopAdditionalSlides(loopAdditionalSlides);
+        swiperConfig.setLoopedSlides(loopedSlides);
+        swiperConfig.setLoopFillGroupWithBlank(loopFillGroupWithBlank);
+        swiperConfig.setBreakpoints(breakpoints);
+        swiperConfig.setBreakpointsInverse(breakpointsInverse);
+        swiperConfig.setObserver(observer);
+        swiperConfig.setObserveParents(observeParents);
+        swiperConfig.setObserveSlideChildren(observeSlideChildren);
+        swiperConfig.setContainerModifierClass(containerModifierClass);
+        swiperConfig.setSlideClass(slideClass);
+        swiperConfig.setSlideActiveClass(slideActiveClass);
+        swiperConfig.setSlideDuplicateActiveClass(slideDuplicateActiveClass);
+        swiperConfig.setSlideVisibleClass(slideVisibleClass);
+        swiperConfig.setSlideDuplicateClass(slideDuplicateClass);
+        swiperConfig.setSlideNextClass(slideNextClass);
+        swiperConfig.setSlideDuplicateNextClass(slideDuplicateNextClass);
+        swiperConfig.setSlidePrevClass(slidePrevClass);
+        swiperConfig.setSlideDuplicatePrevClass(slideDuplicatePrevClass);
+        swiperConfig.setWrapperClass(wrapperClass);
+        swiperConfig.setAccessibility(accessibility);
+        return swiperConfig;
     }
 }
