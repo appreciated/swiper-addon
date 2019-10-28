@@ -4,3 +4,5 @@
 /node_modules/
 /target/
 /.idea/
+/webpack.config.js
+/webpack.generated.js
