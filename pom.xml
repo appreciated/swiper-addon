@@ -5,7 +5,7 @@
     <artifactId>swiper-flow</artifactId>
     <version>2.0.0.alpha3</version>
     <name>Swiper</name>
-    <description>Integration of swiper for Vaadin platform 14</description>
+    <description>Integration of swiper for Vaadin 14</description>
 
     <properties>
         <vaadin.version>14.0.11</vaadin.version>
