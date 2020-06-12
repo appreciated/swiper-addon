@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.appreciated.config.Direction;
+import com.github.appreciated.config.Navigation;
 import com.vaadin.flow.component.*;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.JavaScript;
@@ -41,17 +42,28 @@ public class Swiper extends Div implements HasComponents, HasSize, HasStyle {
     }
 
     private void initNextButton() {
-        if (config.getNavigation() != null) {
-            buttonPrev.addClassName("swiper-button-next");
-            super.add(buttonNext);
+        final Navigation navigation = config.getNavigation();
 
+        if (navigation != null) {
+            buttonNext.addClassName(
+                navigation.getNextEl() != null
+                    ? navigation.getNextEl()
+                    : "swiper-button-next"
+            );
+            super.add(buttonNext);
         }
     }
 
     public void initPreviousButton() {
-        if (config.getNavigation() != null) {
-            buttonPrev.addClassName("swiper-button-prev");
-            super.add(buttonNext);
+        final Navigation navigation = config.getNavigation();
+
+        if (navigation != null) {
+            buttonPrev.addClassName(
+                navigation.getPrevEl() != null
+                    ? navigation.getPrevEl()
+                    : "swiper-button-prev"
+            );
+            super.add(buttonPrev);
         }
     }
 
